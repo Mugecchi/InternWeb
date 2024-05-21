@@ -1,0 +1,42 @@
+/* styles.css */
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Poppins;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-bottom: 5px;
+  width: 50%; /* Set width to 100% */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 10px 18px; /* Adjust this value as needed */
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Wrap items to the next line if needed */
+  justify-content: space-between; /* Align items with space between */
+}
+.answer {
+  width: 47%;
+  font-family: Poppins;
+}
