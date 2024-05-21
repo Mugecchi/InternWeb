@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import CompanyProfile from "./components/CompanyProfile";
 import Faqs from "./components/Faqs";
 // import Purpose from "./components/Purpose";
-import Teams from "./components/Teams";
+import Teams from "./components/Teams/Testimonials/Testimonial";
 // import Testimonials from "./components/Testimonials";
 // import Message from "./components/Message";
 // import Gallery from "./components/Gallery";
