@@ -104,6 +104,7 @@ const useStyles = makeStyles((theme) => ({
   Avatar: {
     width: "100%",
     height: "100%",
+    right: 200,
     transformStyle: "preserve-3d",
     animation: "$rotate 5s linear infinite",
   },
