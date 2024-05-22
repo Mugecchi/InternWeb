@@ -1,9 +1,14 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { Avatar, Box, useMediaQuery, useTheme } from "@material-ui/core";
+const QouteTypo = withStyles({
+  root: {
+    color: "#ff7704",
+  },
+})(Typography);
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -30,46 +35,64 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Testimonial({ Team = {} }) {
+export default function Testimonial({ Team = [] }) {
   const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
+  const key = Object.values(Team);
+  console.log(key);
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper} elevation={10}>
-        <Grid container spacing={2}>
-          <Grid item>
-            <div className={classes.image}>
-              <Avatar className={classes.img} alt="complex" src={Team.src} />
-            </div>
-          </Grid>
-          <Grid item xs={isMobile ? 12 : 3} sm container>
-            <Grid item xs container direction="column" spacing={2}>
-              <Grid item xs={isMobile ? 12 : 9}>
-                <Box>
-                  <Typography gutterBottom variant="subtitle1">
-                    {Team.Name}
-                  </Typography>
-                  <Typography variant="body2" gutterBottom>
-                    {Team.Qoute}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {Team.Testimony}
-                  </Typography>
-                </Box>
+      {Team.map((item, index) => {
+        return (
+          <div>
+            <Paper className={classes.paper} elevation={10}>
+              <Grid container spacing={2}>
+                <Grid item>
+                  <div className={classes.image}>
+                    <Avatar
+                      className={classes.img}
+                      alt="complex"
+                      src={item.src}
+                    />
+                  </div>
+                </Grid>
+                <Grid item xs={isMobile ? 12 : 3} sm container>
+                  <Grid item xs container direction="column" spacing={2}>
+                    <Grid item xs={isMobile ? 12 : 9}>
+                      <Box>
+                        <Typography gutterBottom variant="h1">
+                          {item.Name}
+                        </Typography>
+                        <Typography gutterBottom variant="h3">
+                          {item.Age}
+                        </Typography>
+                        <Typography gutterBottom variant="h3">
+                          {item.Course}
+                        </Typography>
+                        <Typography gutterBottom variant="h3">
+                          {item.DoB}
+                        </Typography>
+                        <QouteTypo variant="h2" gutterBottom>
+                          {item.Qoute}
+                        </QouteTypo>
+                        <Typography variant="h2">{item.Testimony}</Typography>
+                      </Box>
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="body">{item.Body}</Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item>
+                  <i class="fa-solid fa-quote-right fa-10x fa-fade" />
+                </Grid>
               </Grid>
-              <Grid item>
-                <Typography variant="body">{Team.Body}</Typography>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item>
-            <i class="fa-solid fa-quote-right fa-2xl fa-fade" />
-          </Grid>
-        </Grid>
-        <Grid item></Grid>
-      </Paper>
+              <Grid item></Grid>
+            </Paper>
+          </div>
+        );
+      })}
     </div>
   );
 }
