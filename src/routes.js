@@ -1,9 +1,8 @@
-import DefaultLayout from "./layouts/DefaultLayout";
 import Home from "./components/Home";
 import CompanyProfile from "./components/CompanyProfile";
 import Faqs from "./components/Faqs";
 // import Purpose from "./components/Purpose";
-import Teams from "./components/Teams/Testimonials/JoanT";
+import Teams from "./components/Teams/Testimonials/Randy";
 // import Testimonials from "./components/Testimonials";
 // import Message from "./components/Message";
 // import Gallery from "./components/Gallery";
@@ -12,7 +11,7 @@ import ContactUs from "./components/ContactUs";
 const routes = [
   {
     path: "/",
-    element: DefaultLayout,
+
     children: [
       {
         path: "/",

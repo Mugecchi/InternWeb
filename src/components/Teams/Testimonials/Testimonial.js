@@ -3,18 +3,18 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import ButtonBase from "@material-ui/core/ButtonBase";
-import { template } from "lodash";
+import { Avatar, Box, useMediaQuery, useTheme } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(4),
     margin: "auto",
-    maxWidth: 1200,
-    height: 600,
+    maxWidth: 1400,
+    height: 650,
     backgroundColor: "#d6d6d6",
+    borderRadius: "50px",
   },
   image: {
     width: 200,
@@ -23,6 +23,8 @@ const useStyles = makeStyles((theme) => ({
   img: {
     margin: "auto",
     display: "inherit",
+    width: theme.spacing(30),
+    height: theme.spacing(30),
     maxWidth: "100%",
     maxHeight: "100%",
   },
@@ -30,40 +32,43 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Testimonial({ Team = {} }) {
   const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <div className={classes.root}>
       <Paper className={classes.paper} elevation={10}>
         <Grid container spacing={2}>
           <Grid item>
-            <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src={Team.src} />
-            </ButtonBase>
+            <div className={classes.image}>
+              <Avatar className={classes.img} alt="complex" src={Team.src} />
+            </div>
           </Grid>
-          <Grid item xs={12} sm container>
+          <Grid item xs={isMobile ? 12 : 3} sm container>
             <Grid item xs container direction="column" spacing={2}>
-              <Grid item xs>
-                <Typography gutterBottom variant="subtitle1">
-                  {Team.name}
-                </Typography>
-                <Typography variant="body2" gutterBottom>
-                  Sample Testimony
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  sample qoute
-                </Typography>
+              <Grid item xs={isMobile ? 12 : 9}>
+                <Box>
+                  <Typography gutterBottom variant="subtitle1">
+                    {Team.Name}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {Team.Qoute}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    {Team.Testimony}
+                  </Typography>
+                </Box>
               </Grid>
               <Grid item>
-                <Typography variant="body2" style={{ cursor: "pointer" }}>
-                  sample
-                </Typography>
+                <Typography variant="body">{Team.Body}</Typography>
               </Grid>
             </Grid>
-            <Grid item>
-              <Typography variant="subtitle1"></Typography>
-            </Grid>
+          </Grid>
+          <Grid item>
+            <i class="fa-solid fa-quote-right fa-2xl fa-fade" />
           </Grid>
         </Grid>
+        <Grid item></Grid>
       </Paper>
     </div>
   );
