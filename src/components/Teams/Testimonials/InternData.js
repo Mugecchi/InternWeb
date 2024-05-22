@@ -18,12 +18,12 @@ export default function InternData() {
   const data = [
     {
       Name: "Rivera Jon Carlo Miguel C.",
-      Qoute: "sample Qoute", //inside modal
+      Qoute: "Sample Qoute",
       Age: "22",
       DoB: "11/11/2001",
-      Testimony: "Upper half",
-      Body: "lower half of the body",
-      src: Migs, //leave this line empty
+      Testimony: "max of 53 characters dito",
+      Body: "Testimony rin pero kahit ilan na dito banda",
+      src: Migs,
       CardTitle:
         "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
       CardContent: "Sayings, Greetings or introduction para sa card",

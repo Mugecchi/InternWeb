@@ -79,13 +79,13 @@ export default function Testimonial({ Team = [] }) {
                         <Typography variant="h2">{item.Testimony}</Typography>
                       </Box>
                     </Grid>
-                    <Grid item>
-                      <Typography variant="body">{item.Body}</Typography>
-                    </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
                   <i class="fa-solid fa-quote-right fa-10x fa-fade" />
+                </Grid>
+                <Grid item xs={8}>
+                  <Typography variant="h2">{item.Body}</Typography>
                 </Grid>
               </Grid>
               <Grid item></Grid>
