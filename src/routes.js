@@ -8,6 +8,8 @@ import Teams from "./components/Teams/Testimonials/Randy";
 // import Gallery from "./components/Gallery";
 import ContactUs from "./components/ContactUs";
 // import Contributions from ./components/Contributions";
+import Team from "./components/Teams/Testimonials/Team"
+
 const routes = [
   {
     path: "/",
@@ -57,6 +59,11 @@ const routes = [
         path: "contact-us",
         element: ContactUs,
       },
+      {
+        path: "Team",
+        element: Team,
+      }
+   
     ],
   },
 ];
