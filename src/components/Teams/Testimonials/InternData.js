@@ -17,12 +17,84 @@ import ModalExp from "./Modal";
 export default function InternData() {
   const data = [
     {
-      Name: "Rivera Jon Carlo Miguel C.",
-      Qoute: "Sample Qoute",
+      Name: "Rivera, Jon Carlo Miguel C.",
+      Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
-      Testimony: "max of 53 characters dito",
-      Body: "Testimony rin pero kahit ilan na dito banda",
+      Testimony: "Late pero papasok parin",
+      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
+      src: Migs,
+      CardTitle:
+        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
+      CardContent: "Sayings, Greetings or introduction para sa card",
+    },
+    {
+      Name: "Maranan, Adonis A.",
+      Quote: "Anya mittin",
+      Age: "21",
+      DoB: "06/15/2002",
+      Testimony: "Tumatakas pag bibili ng Ulam",
+      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
+      src: Adonis,
+      CardTitle:
+        "Sa totoo lang nagbebenta po ko ng isda, rabbit, kambing, pato, kuros ",
+      CardContent: "Sayings, Greetings or introduction para sa card",
+    },
+    {
+      Name: "Antalan, Randy Jr. Y.",
+      Quote: "Tara kape",
+      Age: "21",
+      DoB: "02/13/2003",
+      Testimony: "Late pero papasok parin",
+      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
+      src: Randy,
+      CardTitle:
+        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
+      CardContent: "Sayings, Greetings or introduction para sa card",
+    },
+    {
+      Name: "Yamat, Benedick v.",
+      Quote: "Tara kape",
+      Age: "22",
+      DoB: "11/11/2001",
+      Testimony: "Late pero papasok parin",
+      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
+      src: Ben,
+      CardTitle:
+        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
+      CardContent: "Sayings, Greetings or introduction para sa card",
+    },
+    {
+      Name: "Palting, Joemar",
+      Quote: "Tara kape",
+      Age: "22",
+      DoB: "11/11/2001",
+      Testimony: "Late pero papasok parin",
+      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
+      src: Joemar,
+      CardTitle:
+        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
+      CardContent: "Sayings, Greetings or introduction para sa card",
+    },
+    {
+      Name: "Batara, Joan r.",
+      Quote: "Tara kape",
+      Age: "22",
+      DoB: "11/11/2001",
+      Testimony: "Late pero papasok parin",
+      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
+      src: Joan,
+      CardTitle:
+        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
+      CardContent: "Sayings, Greetings or introduction para sa card",
+    },
+    {
+      Name: "Rivera, Jon Carlo Miguel C.",
+      Quote: "Tara kape",
+      Age: "22",
+      DoB: "11/11/2001",
+      Testimony: "Late pero papasok parin",
+      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
       src: Migs,
       CardTitle:
         "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
