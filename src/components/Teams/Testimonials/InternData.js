@@ -17,16 +17,17 @@ import ModalExp from "./Modal";
 export default function InternData() {
   const data = [
     {
-      LastName: "Rivera, Jon Carlo Miguel C.",
-      FirstName: "",
+      LastName: "Rivera",
+      FirstName: "Jon Carlo Miguel C.",
       Quote: "Tara kape",
-      Age: "22",
+      Course: "BS Computer Science ",
+      School: "Isabela State University - Cauayan Campus",
+      Introduction: "Hi I am BayMax and I like warm hugs",
       DoB: "11/11/2001",
       Testimony: "Late pero papasok parin",
       Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
       src: Migs,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
+      CardTitle: "Tara Kape -Migs 2024:and beyond",
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
