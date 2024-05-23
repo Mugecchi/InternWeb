@@ -4,11 +4,11 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { Avatar, Box, useMediaQuery, useTheme } from "@material-ui/core";
-const QouteTypo = withStyles({
-  root: {
-    color: "#ff7704",
-  },
-})(Typography);
+// const QouteTypo = withStyles({
+//   root: {
+//     color: "#ff7704",
+//   },
+// })(Typography);
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -102,7 +102,10 @@ export default function Testimonial({ Team = [] }) {
                   <i class="fa-solid fa-quote-right fa-10x fa-fade" />
                 </Grid>
                 <Grid item xs={12} style={{ margin: "10px 30px 0 30px" }}>
-                  <Typography variant="h5">{item.Body}</Typography>
+                  <Typography variant="h5" align="justify">
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {item.Body}
+                  </Typography>
                 </Grid>
               </Grid>
               <Grid item></Grid>
