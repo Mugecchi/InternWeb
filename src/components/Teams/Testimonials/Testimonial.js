@@ -77,10 +77,6 @@ export default function Testimonial({ Team = [] }) {
                       style={{ borderRight: "1px solid black" }}
                     >
                       <Box>
-                        <Typography gutterBottom variant="h1">
-                          {item.LastName}
-                          {item.FirstName}
-                        </Typography>{" "}
                         <Typography className={classes.bio}>
                           {`${item.FirstName}
                            ${item.LastName}`}

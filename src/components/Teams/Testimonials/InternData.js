@@ -19,6 +19,7 @@ export default function InternData() {
     {
       LastName: "Rivera",
       FirstName: "Jon Carlo Miguel",
+
       Quote: "Tara kape",
       Course: "BS Computer Science ",
       School: "Isabela State University - Cauayan Campus",
@@ -26,12 +27,13 @@ export default function InternData() {
       Testimony: "Late pero papasok parin",
       Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
       src: Migs,
-      CardTitle: "Tara Kape -Migs 2024:and beyond",
+      CardTitle: "Tara Kape -Migs 2024 : To Infinity and Beyond",
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
       LastName: "Maranan",
       FirstName: "Adonis",
+      NickName: "Ado",
       Quote: "Anya mittin",
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
@@ -46,6 +48,7 @@ export default function InternData() {
     {
       LastName: "Antalan",
       FirstName: "Randy Jr.",
+      NickName: "Ran",
       Quote: "Tara kape",
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
@@ -60,6 +63,7 @@ export default function InternData() {
     {
       LastName: "Yamat",
       FirstName: "Benedick",
+      NickName: "Ben",
       Quote: "Tara kape",
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
@@ -74,6 +78,7 @@ export default function InternData() {
     {
       LastName: "Palting",
       FirstName: "Joemar",
+      NickName: "Joms",
       Quote: "Tara kape",
       Course: "BS Information Technology ",
       School: "Isabela State University - Cauayan Campus",
@@ -88,6 +93,7 @@ export default function InternData() {
     {
       LastName: "Batara",
       FirstName: "Joan",
+      NickName: "Guo",
       Quote: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
@@ -95,13 +101,13 @@ export default function InternData() {
       Testimony: "Late pero papasok parin",
       Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue",
       src: Joan,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
+      CardTitle: "Lumaki po ako sa farm, Homeschool po ako",
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
       LastName: "Sejalvo",
       FirstName: "Novelyn",
+      NickName: "Novie",
       Quote: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
@@ -116,6 +122,7 @@ export default function InternData() {
     {
       LastName: "Respicio",
       FirstName: "Ryan",
+      NickName: "Ry",
       Quote: "Tara kape",
       Course: "BS Management Accounting ",
       School: "Isabela State University - Cauayan Campus",
@@ -130,6 +137,7 @@ export default function InternData() {
     {
       LastName: "Medina",
       FirstName: "Frenalyn",
+      NickName: "F2",
       Quote: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
@@ -144,6 +152,7 @@ export default function InternData() {
     {
       LastName: "Medina",
       FirstName: "Frenan",
+      NickName: "F1",
       Quote: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
@@ -158,6 +167,7 @@ export default function InternData() {
     {
       LastName: "Medrano",
       FirstName: "Ma. Andrea Antonette",
+      NickName: "Andeng",
       Quote: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
@@ -172,6 +182,7 @@ export default function InternData() {
     {
       LastName: "Aquino",
       FirstName: "Angelina",
+      NickName: "Angie",
       Quote: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
@@ -186,6 +197,7 @@ export default function InternData() {
     {
       LastName: "Ramel",
       FirstName: "Patricia Fae",
+      NickName: "Pat",
       Quote: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
@@ -200,6 +212,7 @@ export default function InternData() {
     {
       LastName: "Agonoy",
       FirstName: "Isah Janriel",
+      NickName: "Isah",
       Quote: "Tara kape",
       Course: "BS Accounting Information System ",
       School: "Isabela State University - Cauayan Campus",
