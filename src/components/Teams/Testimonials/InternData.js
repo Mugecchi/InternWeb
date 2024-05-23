@@ -17,7 +17,8 @@ import ModalExp from "./Modal";
 export default function InternData() {
   const data = [
     {
-      Name: "Rivera, Jon Carlo Miguel C.",
+      LastName: "Rivera, Jon Carlo Miguel C.",
+      FirstName: "",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",

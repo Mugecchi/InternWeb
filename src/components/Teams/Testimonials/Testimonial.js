@@ -59,7 +59,11 @@ export default function Testimonial({ Team = [] }) {
                 </Grid>
                 <Grid item xs={isMobile ? 12 : 3} sm container>
                   <Grid item xs container direction="column" spacing={2}>
-                    <Grid item xs={isMobile ? 12 : 9}>
+                    <Grid
+                      item
+                      xs={isMobile ? 8 : 12}
+                      style={{ backgroundColor: "green" }}
+                    >
                       <Box>
                         <Typography gutterBottom variant="h1">
                           {item.Name}
