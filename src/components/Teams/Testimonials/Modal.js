@@ -68,7 +68,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
 
   return (
     <div className={classes.root}>
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} infinite autoPlaySpeed={2000} autoPlay>
         {Team.map((item, index) => (
           <div key={index}>
             <Paper
