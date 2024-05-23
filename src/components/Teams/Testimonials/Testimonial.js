@@ -105,8 +105,8 @@ export default function Testimonial({ Team = [] }) {
                 <Grid item>
                   <i class="fa-solid fa-quote-right fa-10x fa-fade" />
                 </Grid>
-                <Grid item xs={8}>
-                  <Typography variant="h6">{item.Body}</Typography>
+                <Grid item xs={12} style={{ margin: "10px 30px 0 30px" }}>
+                  <Typography variant="h5">{item.Body}</Typography>
                 </Grid>
               </Grid>
               <Grid item></Grid>
