@@ -3,8 +3,6 @@ import { Box, makeStyles, Grid, Card, Typography } from "@material-ui/core";
 import bg from "../images/bg 2.png";
 import overlay from "../images/overlay.png";
 import WAVE from "../images/WAVE.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import InternData from "./Teams/Testimonials/InternData";
 const useStyles = makeStyles((theme) => ({
   root: {

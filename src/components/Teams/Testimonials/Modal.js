@@ -16,11 +16,9 @@ import "react-multi-carousel/lib/styles.css";
 import Testimonial from "./Testimonial"; // Adjust the import path as needed
 
 const StyledButtonBase = styled(ButtonBase)(({ theme }) => ({
-  borderRadius: "50%",
+  borderRadius: "30%",
+  backgroundColor: "white",
   overflow: "hidden",
-  "&:hover": {
-    backgroundColor: theme.palette.action.hover,
-  },
 }));
 
 const responsive = {
@@ -73,27 +71,25 @@ const ModalExp = ({ children = {}, Team = [] }) => {
       <Carousel responsive={responsive}>
         {Team.map((item, index) => (
           <div key={index}>
-            <Paper className={classes.PaperCont} elevation={10}>
+            <Paper
+              component={StyledButtonBase}
+              className={classes.PaperCont}
+              elevation={10}
+              onClick={handleOpen(index)}
+              style={{ cursor: "pointer" }}
+            >
               <Grid container spacing={2}>
                 <Grid item xs>
-                  <StyledButtonBase
-                    onClick={handleOpen(index)}
+                  <Avatar
+                    src={item.src}
                     style={{
                       height: 200,
                       width: 200,
-                      top: isMobile ? "0" : "15%",
+                      top: isMobile ? "0" : "0%",
                       right: isMobile ? "15%" : null,
-                      left: isMobile ? null : "10%",
+                      left: isMobile ? null : "0%",
                     }}
-                  >
-                    <Avatar
-                      src={item.src}
-                      style={{
-                        height: isMobile ? "50%" : "100%",
-                        width: isMobile ? "50%" : "100%",
-                      }}
-                    />
-                  </StyledButtonBase>
+                  />
                 </Grid>
                 <Grid item xs={isMobile ? 0 : 8}>
                   <Box>
