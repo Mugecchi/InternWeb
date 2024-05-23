@@ -66,7 +66,10 @@ export default function Testimonial({ Team = [] }) {
                     >
                       <Box>
                         <Typography gutterBottom variant="h1">
-                          {item.Name}
+                          {item.LastName}
+                        </Typography>
+                        <Typography gutterBottom variant="h1">
+                          {item.FirstName}
                         </Typography>
                         <Typography gutterBottom variant="h3">
                           {item.Age}

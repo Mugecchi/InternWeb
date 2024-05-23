@@ -17,8 +17,8 @@ import ModalExp from "./Modal";
 export default function InternData() {
   const data = [
     {
-      LastName: "Rivera, Jon Carlo Miguel C.",
-      FirstName: "",
+      LastName: "Rivera",
+      FirstName: "Jon Carlo Miguel",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -30,7 +30,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Maranan, Adonis A.",
+      LastName: "Maranan",
+      FirstName: "Adonis",
       Quote: "Anya mittin",
       Age: "21",
       DoB: "06/15/2002",
@@ -42,7 +43,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Antalan, Randy Jr. Y.",
+      LastName: "Antalan",
+      FirstName: "Randy Jr.",
       Quote: "Tara kape",
       Age: "21",
       DoB: "02/13/2003",
@@ -54,7 +56,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Yamat, Benedick v.",
+      LastName: "Yamat",
+      FirstName: "Benedick",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -66,7 +69,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Palting, Joemar",
+      LastName: "Palting",
+      FirstName: "Joemar",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -78,7 +82,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Batara, Joan r.",
+      LastName: "Batara",
+      FirstName: "Joan",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -90,7 +95,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Sejalvo, Novelyn",
+      LastName: "Sejalvo",
+      FirstName: "Novelyn",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -102,7 +108,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Respicio, Ryan",
+      LastName: "Respicio",
+      FirstName: "Ryan",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -114,7 +121,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Medina, Frenalyn",
+      LastName: "Medina",
+      FirstName: "Frenalyn",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -126,7 +134,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Medina, Frenan",
+      LastName: "Medina",
+      FirstName: "Frenan",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -138,7 +147,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Medrano, Ma. Andrea Antonette",
+      LastName: "Medrano",
+      FirstName: "Ma. Andrea Antonette",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -150,7 +160,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Aquino, Angelina",
+      LastName: "Aquino",
+      FirstName: "Angelina",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -162,7 +173,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Ramel, Patricia Fae",
+      LastName: "Ramel",
+      FirstName: "Patricia Fae",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
@@ -174,7 +186,8 @@ export default function InternData() {
       CardContent: "Sayings, Greetings or introduction para sa card",
     },
     {
-      Name: "Sejalvo, Novelyn.",
+      LastName: "Sejalvo",
+      FirstName: "Novelyn",
       Quote: "Tara kape",
       Age: "22",
       DoB: "11/11/2001",
