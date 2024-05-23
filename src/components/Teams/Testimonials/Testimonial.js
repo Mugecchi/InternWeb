@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
     maxHeight: "100%",
   },
+  bio: {
+    fontWeight: "700",
+  },
 }));
 
 export default function Testimonial({ Team = [] }) {
@@ -58,41 +61,52 @@ export default function Testimonial({ Team = [] }) {
                   </div>
                 </Grid>
                 <Grid item xs={isMobile ? 12 : 3} sm container>
-                  <Grid item xs container direction="column" spacing={2}>
+                  <Grid
+                    item
+                    xs
+                    style={{ marginLeft: "10px" }}
+                    spacing={2}
+                    container
+                    direction="row"
+                    justifyContent="flex-start"
+                    alignItems="center"
+                  >
                     <Grid
                       item
-                      xs={isMobile ? 8 : 12}
-                      style={{ backgroundColor: "green" }}
+                      xs={isMobile ? 8 : 5}
+                      style={{ borderRight: "1px solid black" }}
                     >
                       <Box>
                         <Typography gutterBottom variant="h1">
                           {item.LastName}
-                        </Typography>
-                        <Typography gutterBottom variant="h1">
                           {item.FirstName}
+                        </Typography>{" "}
+                        <Typography className={classes.bio}>
+                          {`${item.FirstName}
+                           ${item.LastName}`}
                         </Typography>
-                        <Typography gutterBottom variant="h3">
-                          {item.Age}
+                        <Typography className={classes.bio}></Typography>
+                        <Typography>{item.Course}</Typography>
+                        <Typography variant="subtitle1">
+                          {item.School}
                         </Typography>
-                        <Typography gutterBottom variant="h3">
-                          {item.Course}
+                      </Box>
+                    </Grid>
+                    <Grid item xs={isMobile ? 8 : 5}>
+                      <Box>
+                        <Typography align="center" className={classes.bio}>
+                          {item.Introduction}
                         </Typography>
-                        <Typography gutterBottom variant="h3">
-                          {item.DoB}
-                        </Typography>
-                        <QouteTypo variant="h2" gutterBottom>
-                          {item.Qoute}
-                        </QouteTypo>
-                        <Typography variant="h2">{item.Testimony}</Typography>
                       </Box>
                     </Grid>
                   </Grid>
                 </Grid>
+
                 <Grid item>
                   <i class="fa-solid fa-quote-right fa-10x fa-fade" />
                 </Grid>
                 <Grid item xs={8}>
-                  <Typography variant="h2">{item.Body}</Typography>
+                  <Typography variant="h6">{item.Body}</Typography>
                 </Grid>
               </Grid>
               <Grid item></Grid>
