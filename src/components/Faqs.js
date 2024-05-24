@@ -35,11 +35,7 @@ const Faqs = () => {
     },
     {
       question: "2. How do I apply for the internship program?",
-      answer: [
-        "Exam (Personality Test)",
-        "Initial Interview",
-        "Final Interview",
-      ],
+      answer: ["Exam", "Initial Interview", "Final Interview"],
     },
     {
       question: "3. What are the requirements?",

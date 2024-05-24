@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, makeStyles, Grid, Card, Typography } from "@material-ui/core";
+import { Box, makeStyles } from "@material-ui/core";
 import bg from "../images/bg 2.png";
 import overlay from "../images/overlay.png";
 import WAVE from "../images/WAVE.svg";
