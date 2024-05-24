@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   secondaryPanel: {
     position: "relative",
     background: "#011c25",
-    padding: "50px",
+    padding: "100px",
   },
 }));
 
@@ -61,9 +61,9 @@ const Home = () => {
       <div className={classes.LandingPane}>
         <img alt="Background" src={bg} className={classes.bgImage} />
         <div className={classes.textContainer}>
-          <Box fontFamily={"Roboto"} lineHeight={0.5}>
-            <h3>Chart your Career Course:</h3>
-            <h2>Your INTERNSHIP, Your FUTURE</h2>
+          <Box fontFamily={"Poppins"} lineHeight={0.5}>
+            <h1>Chart your Career Course:</h1>
+            <h3>Your INTERNSHIP, Your FUTURE</h3>
           </Box>
           <img
             alt="Overlay Background"

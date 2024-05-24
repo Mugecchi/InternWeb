@@ -41,7 +41,8 @@ export default function InternData() {
       Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
       src: Adonis,
       CardTitle: "Opo, mahilig ako mag alaga ng hayop",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardContent:
+        "Nagbebenta ng kambing, pato, baboy, manok, rabbit, kalapati",
     },
     {
       LastName: "Antalan",
@@ -105,7 +106,7 @@ export default function InternData() {
     {
       LastName: "Sejalvo",
       FirstName: "Novelyn",
-      NickName: "Novie",
+      NickName: "Novs",
       Qoute: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",

@@ -31,6 +31,7 @@ const Faqs = () => {
         "BSBA MAJOR IN MARKETING",
         "BSCS",
         "BSIT",
+        "Other related courses",
       ],
     },
     {
@@ -62,16 +63,20 @@ const Faqs = () => {
   };
 
   return (
-    <div className="faqs" style={{ fontFamily: "Poppins" }}>
-      {faqs.map((faq, index) => (
-        <Faq
-          key={index}
-          question={faq.question}
-          answer={faq.answer}
-          isOpen={openIndex === index}
-          onClick={() => handleToggle(index)}
-        />
-      ))}
+    <div className="faq-page">
+      <h1 className="faq-title">F.A.Q.</h1>
+      <div className="faq-popular-questions">
+        <h2>Particular Questions</h2>
+        {faqs.map((faq, index) => (
+          <Faq
+            key={index}
+            question={faq.question}
+            answer={faq.answer}
+            isOpen={openIndex === index}
+            onClick={() => handleToggle(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
