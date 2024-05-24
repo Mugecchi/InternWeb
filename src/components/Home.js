@@ -76,6 +76,7 @@ const Home = () => {
       <div className={classes.secondaryPanel}>
         <InternData />
       </div>
+      <div className="container"></div>
     </div>
   );
 };

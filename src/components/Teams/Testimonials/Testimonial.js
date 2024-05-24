@@ -20,6 +20,10 @@ const useStyles = makeStyles((theme) => ({
     height: 650,
     backgroundColor: "#d6d6d6",
     borderRadius: "50px",
+    [theme.breakpoints.down("sm")]: {
+      width: "50%",
+      height: "100%",
+    },
   },
   image: {
     width: 200,
@@ -48,7 +52,7 @@ export default function Testimonial({ Team = [] }) {
     <div className={classes.root}>
       {Team.map((item, index) => {
         return (
-          <div>
+          <div className={classes.root}>
             <Paper className={classes.paper} elevation={10}>
               <Grid container spacing={2}>
                 <Grid item>
@@ -77,10 +81,6 @@ export default function Testimonial({ Team = [] }) {
                       style={{ borderRight: "1px solid black" }}
                     >
                       <Box>
-                        <Typography gutterBottom variant="h1">
-                          {item.LastName}
-                          {item.FirstName}
-                        </Typography>{" "}
                         <Typography className={classes.bio}>
                           {`${item.FirstName}
                            ${item.LastName}`}
