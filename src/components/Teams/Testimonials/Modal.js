@@ -93,11 +93,11 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                 </Grid>
                 <Grid item xs={isMobile ? 0 : 8}>
                   <Box>
-                    <Typography variant={isMobile ? "h4" : "h3"} align="center">
+                    <Typography variant={isMobile ? "h1" : "h1"} align="center">
                       {item.NickName}
                     </Typography>
-                    <Typography variant="h2">{item.CardTitle}</Typography>
-                    <Typography variant="h3"> {item.CardContent}</Typography>
+                    <Typography variant="h4">{item.CardTitle}</Typography>
+                    <Typography variant="h4"> {item.CardContent}</Typography>
                   </Box>
                 </Grid>
               </Grid>
