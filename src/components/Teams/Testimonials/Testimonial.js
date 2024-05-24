@@ -16,10 +16,14 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(4),
     margin: "auto",
-    maxWidth: 1400,
-    height: 650,
+    maxWidth: 1300,
+    minHeight: 650,
     backgroundColor: "#d6d6d6",
     borderRadius: "50px",
+    [theme.breakpoints.down("sm")]: {
+      width: "50%",
+      height: "100%",
+    },
   },
   image: {
     width: 200,
@@ -48,7 +52,7 @@ export default function Testimonial({ Team = [] }) {
     <div className={classes.root}>
       {Team.map((item, index) => {
         return (
-          <div>
+          <div className={classes.root}>
             <Paper className={classes.paper} elevation={10}>
               <Grid container spacing={2}>
                 <Grid item>
