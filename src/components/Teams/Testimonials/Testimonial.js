@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(4),
     margin: "auto",
-    maxWidth: 1400,
-    height: 650,
+    maxWidth: 1300,
+    minHeight: 650,
     backgroundColor: "#d6d6d6",
     borderRadius: "50px",
     [theme.breakpoints.down("sm")]: {

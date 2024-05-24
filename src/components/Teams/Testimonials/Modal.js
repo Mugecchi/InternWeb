@@ -21,25 +21,6 @@ const StyledButtonBase = styled(ButtonBase)(({ theme }) => ({
   overflow: "hidden",
 }));
 
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
-
 const useStyles = makeStyles((theme) => ({
   root: {},
   PaperCont: {
@@ -65,6 +46,20 @@ const ModalExp = ({ children = {}, Team = [] }) => {
 
   const handleOpen = (index) => () => setOpenModalIndex(index);
   const handleClose = () => setOpenModalIndex(null);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   return (
     <div className={classes.root}>
@@ -78,7 +73,13 @@ const ModalExp = ({ children = {}, Team = [] }) => {
               onClick={handleOpen(index)}
               style={{ cursor: "pointer" }}
             >
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+              >
                 <Grid item xs>
                   <Avatar
                     src={item.src}
@@ -103,18 +104,25 @@ const ModalExp = ({ children = {}, Team = [] }) => {
               </Grid>
             </Paper>
             <Modal open={openModalIndex === index} onClose={handleClose}>
-              <Box
+              <Grid
+                container
                 style={{
+                  width: "90%",
                   position: "absolute",
-                  top: "2%",
-                  left: "3%",
-                  width: isMobile ? "90%" : 1400,
-                  boxShadow: 24,
-                  padding: "20px",
+                  left: "4%",
+                  top: "3%",
                 }}
               >
-                <Testimonial Team={[item]} />
-              </Box>
+                <Grid
+                  item
+                  container
+                  direction="column"
+                  justifyContent="center"
+                  alignItems="center"
+                >
+                  <Testimonial Team={[item]} />
+                </Grid>
+              </Grid>
             </Modal>
           </div>
         ))}

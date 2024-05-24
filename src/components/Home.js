@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, makeStyles } from "@material-ui/core";
+import { Box, makeStyles, Grid } from "@material-ui/core";
 import bg from "../images/bg 2.png";
 import overlay from "../images/overlay.png";
 import WAVE from "../images/WAVE.svg";
@@ -73,9 +73,11 @@ const Home = () => {
           <img alt="Wave" src={WAVE} className={classes.WAVE} />
         </div>
       </div>
-      <div className={classes.secondaryPanel}>
-        <InternData />
-      </div>
+      <Grid className={classes.secondaryPanel} container direction="row">
+        <Grid item xs={12}>
+          <InternData />
+        </Grid>
+      </Grid>
       <div className="container"></div>
     </div>
   );
