@@ -5,7 +5,6 @@ import {
   ButtonBase,
   Avatar,
   Paper,
-  Container,
   makeStyles,
   styled,
   Grid,
@@ -32,16 +31,16 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     overflow: "hidden",
     width: "80vh",
-    height: "100%",
+    height: "40vh",
     boxShadow: 24,
     borderRadius: "50px",
     [theme.breakpoints.down("sm")]: {
       width: "50%",
-      height: "100%",
+      height: "auto",
     },
   },
   carouselItem: {
-    marginRight: "10vh", // Adjust the margin as needed
+    margin: "0 5vh",
   },
   blurWrapper: {
     position: "relative",
@@ -51,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
       position: "absolute",
       top: 0,
       bottom: 0,
-      width: "50px",
+      width: "50vh",
       zIndex: 1,
     },
     "&::before": {
@@ -97,6 +96,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
     <div className={classes.root}>
       <div className={classes.blurWrapper}>
         <Carousel
+          style={{ maxHeight: "10vh" }}
           responsive={responsive}
           infinite
           autoPlaySpeed={2000}
@@ -132,8 +132,11 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                     />
                   </Grid>
                   <Grid item xs>
-                    <Box>
-                      <Typography variant={isMobile ? "h1" : "h1"}>
+                    <Box style={{ marginLeft: "2vh" }} textAlign={"left"}>
+                      <Typography
+                        align="center"
+                        variant={isMobile ? "h1" : "h1"}
+                      >
                         {item.NickName}
                       </Typography>
                       <Typography variant="h4">{item.CardTitle}</Typography>
@@ -147,7 +150,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                   container
                   style={{
                     left: "3vw",
-                    width: "100vh",
+                    width: "80vw",
                     borderRadius: "50px",
                     position: "absolute",
                     top: "5vh",
