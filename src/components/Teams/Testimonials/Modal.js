@@ -5,6 +5,7 @@ import {
   ButtonBase,
   Avatar,
   Paper,
+  Container,
   makeStyles,
   styled,
   Grid,
@@ -53,7 +54,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -63,7 +64,13 @@ const ModalExp = ({ children = {}, Team = [] }) => {
 
   return (
     <div className={classes.root}>
-      <Carousel responsive={responsive} infinite autoPlaySpeed={2000} autoPlay>
+      <Carousel
+        responsive={responsive}
+        infinite
+        autoPlaySpeed={2000}
+        autoPlay
+        centerMode={true}
+      >
         {Team.map((item, index) => (
           <div key={index}>
             <Paper
