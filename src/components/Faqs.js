@@ -112,14 +112,16 @@ const Faqs = () => {
             </Grid>
           </Grid>
           <Grid>
-            <label>Subject</label>
-            <input
-              type="text"
-              name="subject"
-              value={formState.subject}
-              onChange={handleInputChange}
-              placeholder="Enter your subject"
-            />
+            <Grid>
+              <label>Subject</label>
+              <input
+                type="text"
+                name="subject"
+                value={formState.subject}
+                onChange={handleInputChange}
+                placeholder="Enter your subject"
+              />
+            </Grid>
           </Grid>
           <Grid>
             <label>Email*</label>
