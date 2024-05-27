@@ -84,13 +84,16 @@ const Faqs = () => {
       <div className="faq-popular-questions">
         <h2>Particular Questions</h2>
         {faqs.map((faq, index) => (
-          <Faq
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={openIndex === index}
-            onClick={() => handleToggle(index)}
-          />
+          <Grid container xs={12} spacing={0}>
+            <Grid item key={index} xs={4} style={{ marginTop: "0.5vh" }}>
+              <Faq
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openIndex === index}
+                onClick={() => handleToggle(index)}
+              />
+            </Grid>
+          </Grid>
         ))}
       </div>
       <div className="contact-us">
