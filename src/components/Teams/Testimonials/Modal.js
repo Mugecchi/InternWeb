@@ -22,19 +22,50 @@ const StyledButtonBase = styled(ButtonBase)(({ theme }) => ({
 }));
 
 const useStyles = makeStyles((theme) => ({
-  root: {},
+  root: {
+    position: "relative",
+    padding: theme.spacing(2),
+  },
   PaperCont: {
     padding: "30px",
     position: "relative",
     overflow: "hidden",
     width: 800,
-    left: 300,
-    height: 300,
+    height: "100%",
     boxShadow: 24,
     borderRadius: "50px",
     [theme.breakpoints.down("sm")]: {
       width: "50%",
       height: "100%",
+    },
+  },
+  carouselItem: {
+    marginRight: "10vh", // Adjust the margin as needed
+  },
+  blurWrapper: {
+    position: "relative",
+    overflow: "hidden",
+    "&::before, &::after": {
+      content: '""',
+      position: "absolute",
+      top: 0,
+      bottom: 0,
+      width: "50px",
+      zIndex: 1,
+    },
+    "&::before": {
+      left: 0,
+      background:
+        "linear-gradient(to right, rgba(1, 28, 37, 1), rgba(1, 28, 37, 0))",
+      filter: "blur(0px)",
+      zIndex: 1,
+    },
+    "&::after": {
+      right: 0,
+      background:
+        "linear-gradient(to left, rgba(1, 28, 37, 1), rgba(1, 28, 37, 0))",
+      filter: "blur(0px)",
+      zIndex: 1,
     },
   },
 }));
@@ -49,7 +80,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -63,72 +94,71 @@ const ModalExp = ({ children = {}, Team = [] }) => {
 
   return (
     <div className={classes.root}>
-      <Carousel responsive={responsive} infinite autoPlaySpeed={2000} autoPlay>
-        {Team.map((item, index) => (
-          <div key={index}>
-            <Paper
-              component={StyledButtonBase}
-              className={classes.PaperCont}
-              elevation={10}
-              onClick={handleOpen(index)}
-              style={{ cursor: "pointer" }}
-            >
-              <Grid
-                container
-                spacing={2}
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <Grid item xs>
-                  <Avatar
-                    src={item.src}
-                    style={{
-                      height: 200,
-                      width: 200,
-                      top: isMobile ? "0" : "0%",
-                      right: isMobile ? "15%" : null,
-                      left: isMobile ? null : "0%",
-                    }}
-                  />
-                </Grid>
-                <Grid item xs={isMobile ? 0 : 8}>
-                  <Box style={{ width: "100%" }}>
-                    <Typography variant={isMobile ? "h1" : "h1"} align="center">
-                      {item.NickName}
-                    </Typography>
-                    <Typography variant="h4">{item.CardTitle}</Typography>
-                    <Typography variant="h4"> {item.CardContent}</Typography>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Paper>
-            <Modal open={openModalIndex === index} onClose={handleClose}>
-              <Grid
-                container
-                style={{
-                  borderRadius: "50px",
-                  width: "inherit",
-                  height: "inherit",
-                  position: "absolute",
-                  left: "5%",
-                  top: "3%",
-                }}
+      <div className={classes.blurWrapper}>
+        <Carousel
+          responsive={responsive}
+          infinite
+          autoPlaySpeed={2000}
+          autoPlay
+          centerMode
+        >
+          {Team.map((item, index) => (
+            <div key={index} className={classes.carouselItem}>
+              <Paper
+                component={StyledButtonBase}
+                className={classes.PaperCont}
+                elevation={10}
+                onClick={handleOpen(index)}
+                style={{ cursor: "pointer" }}
               >
                 <Grid
-                  item
                   container
-                  direction="column"
+                  spacing={2}
+                  direction="row"
                   justifyContent="center"
                   alignItems="center"
                 >
+                  <Grid item xs={4}>
+                    <Avatar
+                      src={item.src}
+                      style={{
+                        height: 200,
+                        width: 200,
+                        top: isMobile ? "0" : "0%",
+                        right: isMobile ? "15%" : null,
+                        left: isMobile ? null : "0%",
+                      }}
+                    />
+                  </Grid>
+                  <Grid item xs>
+                    <Box>
+                      <Typography variant={isMobile ? "h1" : "h1"}>
+                        {item.NickName}
+                      </Typography>
+                      <Typography variant="h4">{item.CardTitle}</Typography>
+                      <Typography variant="h4"> {item.CardContent}</Typography>
+                    </Box>
+                  </Grid>
+                </Grid>
+              </Paper>
+              <Modal open={openModalIndex === index} onClose={handleClose}>
+                <Grid
+                  container
+                  style={{
+                    left: "4vh",
+                    width: "100vh",
+                    borderRadius: "50px",
+                    position: "absolute",
+                    top: "5vh",
+                  }}
+                >
                   <Testimonial Team={[item]} />
                 </Grid>
-              </Grid>
-            </Modal>
-          </div>
-        ))}
-      </Carousel>
+              </Modal>
+            </div>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };
