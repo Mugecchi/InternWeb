@@ -19,7 +19,7 @@ export default function InternData() {
     {
       LastName: "Rivera",
       FirstName: "Jon Carlo Miguel",
-      Quote: <h3>Some complex questions have the simplest answers. </h3>,
+      Quote: <h3>"Some complex questions have the simplest answers."</h3>,
       Course: "BS Computer Science ",
       School: "Isabela State University - Cauayan Campus",
       Introduction: (
@@ -87,8 +87,12 @@ export default function InternData() {
       LastName: "Maranan",
       FirstName: "Adonis",
       NickName: "Ado",
-      Quote:
-        "Kung hindi mo alam edi aralin mo, Lahat ng bagay ay ina aral bago gawin, maliban kay GPT 🙂",
+      Quote: (
+        <h3>
+          "Kung hindi mo alam edi aralin mo, Lahat ng bagay ay ina aral bago
+          gawin, maliban kay GPT 🙂"
+        </h3>
+      ),
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
       Introduction: "Hi I'm i ano ba ilalagay ko dito",
@@ -159,8 +163,13 @@ export default function InternData() {
     {
       LastName: "Batara",
       FirstName: "Joan",
-      NickName: "Jo",
-      Quote: "Tara kape",
+      NickName: "Guo",
+      Quote: (
+        <h3>
+          "You’ll never know what’s ahead of you when you limit yourself. Have
+          the courage to try and explore."
+        </h3>
+      ),
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
       Introduction: "Bonjour!  Set your mind and enjoy reading",
@@ -231,7 +240,7 @@ export default function InternData() {
       LastName: "Respicio",
       FirstName: "Ryan",
       NickName: "Ry",
-      Quote: "STAPPPppppp",
+      Quote: <h3>"STAPPPppppp"</h3>,
       Course: "BS Management Accounting ",
       School: "Isabela State University - Cauayan Campus",
       Introduction: "Hi, I’m Ry, Nonchalant na OA",
@@ -324,7 +333,7 @@ export default function InternData() {
       LastName: "Medina",
       FirstName: "Frenan",
       NickName: "Frenan",
-      Quote: "",
+      Quote: <h3>"Manifest lang nang manifest"</h3>,
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
       Introduction: "Hi, I’m FreNen, este FRENAN",
@@ -358,7 +367,7 @@ export default function InternData() {
       LastName: "Medrano",
       FirstName: "Ma. Andrea Antonette",
       NickName: "Andeng",
-      Quote: "Tara kape",
+      Quote: "",
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
       Introduction:
@@ -414,22 +423,22 @@ export default function InternData() {
         </p>
       ),
       src: Andeng,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "",
+      CardContent:
+        "If you want it easy and simple, then Radztech may not be for you.",
     },
     {
       LastName: "Aquino",
       FirstName: "Angelina",
       NickName: "Angie",
       Quote: (
-        <p>
+        <h3>
           You can’t skip chapters, that’s not how life works. Some chapters will
           make you cry for weeks. You will read things you don’t want to read,
           you will have moments when you don’t want the pages to end. But you
           have to keep going. Live yours, don’t miss out.
           <br />- Courtney Peppernell, Healing the Heart
-        </p>
+        </h3>
       ),
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
@@ -527,7 +536,6 @@ export default function InternData() {
       Course: "BS Accounting Information System ",
       School: "Isabela State University - Cauayan Campus",
       Introduction: "Hi I am BayMax and I like warm hugs",
-      DoB: "11/11/2001",
       Testimony: "Late pero papasok parin",
       Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
       src: Novelyn,

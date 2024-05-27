@@ -20,17 +20,26 @@ const Faq = ({ question, answer, isOpen, onClick }) => {
 
 const Faqs = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const [formState, setFormState] = useState({
+    fullName: "",
+    subject: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
   const faqs = [
     {
       question: "1. What courses are accepted?",
       answer: [
-        "BSA",
-        "BSMA",
-        "BSAIS",
-        "BSBA MAJOR IN MARKETING",
-        "BSCS",
-        "BSIT",
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Sciencce in Management Accounting",
+        "Bachelor of Sciencce in Accounting information System",
+        "Bachelor of Science in Business Administration Major in Marketting",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "AB in Mass Communication",
+        "AB in Public Administration",
         "Other related courses",
       ],
     },
@@ -58,6 +67,17 @@ const Faqs = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormState({ ...formState, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log(formState);
+  };
+
   return (
     <div className="faq-page">
       <h1 className="faq-title">F.A.Q.</h1>
@@ -72,6 +92,63 @@ const Faqs = () => {
             onClick={() => handleToggle(index)}
           />
         ))}
+      </div>
+      <div className="contact-us">
+        <h2>Contact Us</h2>
+        <form onSubmit={handleSubmit} className="contact-form">
+          <div>
+            <label>Full name*</label>
+            <input
+              type="text"
+              name="fullName"
+              value={formState.fullName}
+              onChange={handleInputChange}
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <div>
+            <label>Subject</label>
+            <input
+              type="text"
+              name="subject"
+              value={formState.subject}
+              onChange={handleInputChange}
+              placeholder="Enter your subject"
+            />
+          </div>
+          <div>
+            <label>Email*</label>
+            <input
+              type="email"
+              name="email"
+              value={formState.email}
+              onChange={handleInputChange}
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div>
+            <label>Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              value={formState.phone}
+              onChange={handleInputChange}
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div>
+            <label>Message</label>
+            <textarea
+              name="message"
+              value={formState.message}
+              onChange={handleInputChange}
+              placeholder="Type your message here..."
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
   );
