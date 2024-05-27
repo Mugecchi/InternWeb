@@ -107,7 +107,7 @@ export default function Testimonial({ Team = [] }) {
                     </Grid>
                     <Grid item xs={isMobile ? 8 : 5}>
                       <Box>
-                        <Typography align="center" className={classes.bio}>
+                        <Typography align="justify" className={classes.bio}>
                           {item.Introduction}
                         </Typography>
                       </Box>
@@ -119,13 +119,13 @@ export default function Testimonial({ Team = [] }) {
                 </Grid>
                 <Grid item xs={12} style={{ margin: "10px 30px 0 30px" }}>
                   <Typography variant="h4" align="justify">
-                    &nbsp; &nbsp; &nbsp; &nbsp; {item.Testimony}
+                    &nbsp; &nbsp; &nbsp; &nbsp;{item.Testimony}
                   </Typography>
                   <Typography variant="h4" align="justify">
                     &nbsp; &nbsp; &nbsp; &nbsp;{item.Body}
                   </Typography>
                   <Typography variant="h4" align="justify">
-                    &nbsp; &nbsp; &nbsp; &nbsp;{item.Qoute}
+                    &nbsp; &nbsp; &nbsp; &nbsp;{item.Quote}
                   </Typography>
                 </Grid>
               </Grid>
