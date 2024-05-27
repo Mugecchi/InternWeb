@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./FAQS.css";
-
+import { Grid } from "@material-ui/core";
 const Faq = ({ question, answer, isOpen, onClick }) => {
   return (
     <div className="faq-container">
@@ -96,18 +96,22 @@ const Faqs = () => {
       <div className="contact-us">
         <h2>Contact Us</h2>
         <form onSubmit={handleSubmit} className="contact-form">
-          <div>
-            <label>Full name*</label>
-            <input
-              type="text"
-              name="fullName"
-              value={formState.fullName}
-              onChange={handleInputChange}
-              placeholder="Enter your full name"
-              required
-            />
-          </div>
-          <div>
+          <Grid container xs={12} spacing={0}>
+            <Grid item xs={1}>
+              <label>Full name</label>
+            </Grid>
+            <Grid item xs={3}>
+              <input
+                type="text"
+                name="fullName"
+                value={formState.fullName}
+                onChange={handleInputChange}
+                placeholder="Enter your full name"
+                required
+              />
+            </Grid>
+          </Grid>
+          <Grid>
             <label>Subject</label>
             <input
               type="text"
@@ -116,8 +120,8 @@ const Faqs = () => {
               onChange={handleInputChange}
               placeholder="Enter your subject"
             />
-          </div>
-          <div>
+          </Grid>
+          <Grid>
             <label>Email*</label>
             <input
               type="email"
@@ -127,8 +131,8 @@ const Faqs = () => {
               placeholder="Enter your email"
               required
             />
-          </div>
-          <div>
+          </Grid>
+          <Grid>
             <label>Phone</label>
             <input
               type="tel"
@@ -137,8 +141,8 @@ const Faqs = () => {
               onChange={handleInputChange}
               placeholder="Enter your phone number"
             />
-          </div>
-          <div>
+          </Grid>
+          <Grid>
             <label>Message</label>
             <textarea
               name="message"
@@ -146,7 +150,7 @@ const Faqs = () => {
               onChange={handleInputChange}
               placeholder="Type your message here..."
             ></textarea>
-          </div>
+          </Grid>
           <button type="submit">Send</button>
         </form>
       </div>
