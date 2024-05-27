@@ -49,7 +49,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 1,
+      items: 2,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -93,7 +93,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                   />
                 </Grid>
                 <Grid item xs={isMobile ? 0 : 8}>
-                  <Box>
+                  <Box style={{ width: "100%" }}>
                     <Typography variant={isMobile ? "h1" : "h1"} align="center">
                       {item.NickName}
                     </Typography>
