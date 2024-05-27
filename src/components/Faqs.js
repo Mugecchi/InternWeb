@@ -35,11 +35,7 @@ const Faqs = () => {
       ],
     },
     {
-      question: "2. How do I apply for the internship program?",
-      answer: ["Exam", "Initial Interview", "Final Interview"],
-    },
-    {
-      question: "3. What are the requirements?",
+      question: "2. What are the requirements?",
       answer: [
         "CV/Resume",
         "COG/Curriculum Evaluation(1st-4th Year)",
@@ -47,11 +43,11 @@ const Faqs = () => {
       ],
     },
     {
-      question: "4. How many interns are usually accepted in the program?",
+      question: "3. How many interns are usually accepted in the program?",
       answer: ["No specific number of applicants"],
     },
     {
-      question: "5. What is the company culture?",
+      question: "4. What is the company culture?",
       answer: [
         "Our company culture is deeply rooted in our core values of teamwork, inclusivity, and a family-like atmosphere, treating every member of our team as part of our extended family, fostering a supportive and welcoming environment where everyone feels valued and respected. Our weekly Bible study sessions provide an opportunity for personal and spiritual growth, further enhancing the sense of community and connection among our team members. We place a strong emphasis on collaboration and teamwork, encouraging employees to work together towards common goals and supporting each other along the way. We strive to create a workplace where everyone feels comfortable, appreciated, and empowered to thrive.",
       ],

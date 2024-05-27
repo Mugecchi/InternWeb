@@ -91,7 +91,10 @@ export default function Testimonial({ Team = [] }) {
                       style={{ borderRight: "1px solid black" }}
                     >
                       <Box>
-                        <Typography className={classes.bio}>
+                        <Typography
+                          className={classes.bio}
+                          style={{ fontSize: 40 }}
+                        >
                           {`${item.FirstName}
                            ${item.LastName}`}
                         </Typography>
@@ -111,14 +114,18 @@ export default function Testimonial({ Team = [] }) {
                     </Grid>
                   </Grid>
                 </Grid>
-
                 <Grid item>
                   <i class="fa-solid fa-quote-right fa-10x fa-fade" />
                 </Grid>
                 <Grid item xs={12} style={{ margin: "10px 30px 0 30px" }}>
-                  <Typography variant="h5" align="justify">
-                    &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {item.Body}
+                  <Typography variant="h4" align="justify">
+                    &nbsp; &nbsp; &nbsp; &nbsp; {item.Testimony}
+                  </Typography>
+                  <Typography variant="h4" align="justify">
+                    &nbsp; &nbsp; &nbsp; &nbsp;{item.Body}
+                  </Typography>
+                  <Typography variant="h4" align="justify">
+                    &nbsp; &nbsp; &nbsp; &nbsp;{item.Qoute}
                   </Typography>
                 </Grid>
               </Grid>

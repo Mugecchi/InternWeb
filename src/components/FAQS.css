@@ -15,8 +15,8 @@
 }
 
 .collapsible {
-  background-color: #000000;
-  color: white;
+  background-color: #f6eaea;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   padding: 10px;
   width: 100%;
