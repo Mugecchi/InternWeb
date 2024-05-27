@@ -1,10 +1,9 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { Avatar, Box, useMediaQuery, useTheme } from "@material-ui/core";
-//import { makeStyles, withStyles } from "@material-ui/core/styles";
 // const QouteTypo = withStyles({
 //   root: {
 //     color: "#ff7704",
@@ -24,12 +23,18 @@ const useStyles = makeStyles((theme) => ({
     height: "80vh",
     backgroundColor: "#d6d6d6",
     borderRadius: "50px",
+    overflow: "auto", // Enable scrollbar
+    "&::-webkit-scrollbar": {
+      width: "0", // Hide scrollbar
+      height: "0",
+    },
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       padding: theme.spacing(2),
       borderRadius: "20px",
     },
   },
+
   image: {
     width: 200,
     height: 200,
@@ -112,7 +117,7 @@ export default function Testimonial({ Team = [] }) {
                 </Grid>
                 <Grid item xs={12} style={{ margin: "10px 30px 0 30px" }}>
                   <Typography variant="h5" align="justify">
-                    &nbsp; &nbsp; &nbsp; &nbsp;{item.Testimonial}
+                    &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {item.Body}
                   </Typography>
                 </Grid>
