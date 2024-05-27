@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "180vh",
+    minHeight: "100vh",
     zIndex: -1,
     padding: theme.spacing(2),
   },
@@ -114,7 +114,6 @@ const useStyles = makeStyles((theme) => ({
     top: 1000,
     left: 200,
     width: "80%",
-    height: "auto",
     zIndex: -1,
   },
 }));
@@ -213,158 +212,6 @@ const CompanyProfile = () => {
                 II. Operating for at least a decade now, Radztech has already
                 helped more than 20 companies under different industries in
                 Region I, II and IV.
-              </Typography>
-            </Box>
-          </Box>
-        </CardContent>
-      </Card>
-      <Card className={classes.card2000}>
-        <CardContent>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography
-              variant="h3"
-              component="h1"
-              fontFamily={"poppins"}
-              gutterBottom
-            >
-              <Box fontWeight={800} style={{ color: "#ff7704" }}>
-                2000 - 2005
-              </Box>
-            </Typography>
-            <Box style={{ color: "#000000" }}>
-              <Typography
-                style={{ position: "right" }}
-                variant="body1"
-                align="justify"
-                paragraph
-              >
-                <ul>
-                  <li>Accounting Information System v1.</li>
-                  <li>Computerized Enrollmemet</li>
-                  <li>System. Radztech Computer Syetems.</li>
-                </ul>
-              </Typography>
-            </Box>
-          </Box>
-        </CardContent>
-      </Card>
-      <Card className={classes.card2006}>
-        <CardContent>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography
-              variant="h3"
-              component="h1"
-              fontFamily={"poppins"}
-              gutterBottom
-            >
-              <Box fontWeight={800} style={{ color: "#ff7704" }}>
-                2006
-              </Box>
-            </Typography>
-            <Box style={{ color: "#000000" }}>
-              <Typography
-                style={{ position: "right" }}
-                variant="body1"
-                align="justify"
-                paragraph
-              >
-                <ul>
-                  <li>
-                    Radztech Component Systems: Payroll and Inventory Management
-                    System.
-                  </li>
-                </ul>
-              </Typography>
-            </Box>
-          </Box>
-        </CardContent>
-      </Card>
-      <Card className={classes.card2011}>
-        <CardContent>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography
-              variant="h3"
-              component="h1"
-              fontFamily={"poppins"}
-              gutterBottom
-            >
-              <Box fontWeight={800} style={{ color: "#ff7704" }}>
-                2011 - 2021
-              </Box>
-            </Typography>
-            <Box style={{ color: "#000000" }}>
-              <Typography
-                style={{ position: "right" }}
-                variant="body1"
-                align="justify"
-                paragraph
-              >
-                <ul>
-                  <li>Radztech AIS Specialization</li>
-                </ul>
-                <ul>
-                  Because the most used accounting and inventory system's for
-                  contributors in its are of operation.
-                </ul>
-              </Typography>
-            </Box>
-          </Box>
-        </CardContent>
-      </Card>
-      <Card className={classes.card2022}>
-        <CardContent>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography
-              variant="h3"
-              component="h1"
-              fontFamily={"poppins"}
-              gutterBottom
-            >
-              <Box fontWeight={800} style={{ color: "#ff7704" }}>
-                2022
-              </Box>
-            </Typography>
-            <Box style={{ color: "#000000" }}>
-              <Typography
-                style={{ position: "right" }}
-                variant="body1"
-                align="justify"
-                paragraph
-              >
-                <ul>
-                  <li>
-                    UlapBiz - Online AIS and ERP Systems for private entities.
-                  </li>
-                  <li>Radztech Business Solution</li>
-                </ul>
-              </Typography>
-            </Box>
-          </Box>
-        </CardContent>
-      </Card>
-      <Card className={classes.card2023}>
-        <CardContent>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography
-              variant="h3"
-              component="h1"
-              fontFamily={"poppins"}
-              gutterBottom
-            >
-              <Box fontWeight={800} style={{ color: "#ff7704" }}>
-                2023
-              </Box>
-            </Typography>
-            <Box style={{ color: "#000000" }}>
-              <Typography
-                style={{ position: "right" }}
-                variant="body1"
-                align="justify"
-                paragraph
-              >
-                <ul>
-                  <li>Integrated Budget & Financial Reporting System.</li>
-                </ul>
               </Typography>
             </Box>
           </Box>

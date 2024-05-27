@@ -4,9 +4,12 @@ import bg from "../images/bg 2.png";
 import overlay from "../images/overlay.png";
 import WAVE from "../images/WAVE.svg";
 import InternData from "./Teams/Testimonials/InternData";
+import Faqs from "./Faqs";
+import CompanyProfile from "./CompanyProfile";
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
+    zIndex: "-1",
   },
   LandingPane: {
     textAlign: "center",
@@ -47,6 +50,10 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     zIndex: -1,
   },
+  primaryPanel: {
+    position: "relative",
+    padding: "100px",
+  },
   secondaryPanel: {
     position: "relative",
     background: "#011c25",
@@ -73,9 +80,18 @@ const Home = () => {
           <img alt="Wave" src={WAVE} className={classes.WAVE} />
         </div>
       </div>
+      <div className={classes.primaryPanel}>
+        <CompanyProfile />
+      </div>
       <div className={classes.secondaryPanel}>
         <InternData />
       </div>
+      <div className={classes.primaryPanel}>Purpose</div>{" "}
+      <div className={classes.primaryPanel}>Contribution</div>{" "}
+      <div className={classes.primaryPanel}>Message from Radztech family</div>{" "}
+      <div className={classes.primaryPanel}>interns gallery</div>
+      <div className={classes.primaryPanel}>Faqs</div>{" "}
+      <div className={classes.primaryPanel}>Contact Us</div>
     </div>
   );
 };
