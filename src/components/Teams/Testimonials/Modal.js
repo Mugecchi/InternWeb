@@ -10,6 +10,7 @@ import {
   Grid,
   Typography,
   useMediaQuery,
+  useTheme,
 } from "@material-ui/core";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -27,21 +28,29 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
   },
   PaperCont: {
-    padding: "30px",
+    padding: "2vh",
     position: "relative",
     overflow: "hidden",
     width: "80vh",
     height: "40vh",
     boxShadow: 24,
     borderRadius: "50px",
+    [theme.breakpoints.down("md")]: {
+      width: "35vh",
+      height: "35vh",
+    },
     [theme.breakpoints.down("sm")]: {
-      width: "50%",
-      height: "auto",
+      width: "35vh",
+      height: "35vh",
     },
   },
   carouselItem: {
-    margin: "0 5vh",
+    margin: "2vh",
   },
+  carouselMobItem: {
+    margin: "0vh",
+  },
+
   blurWrapper: {
     position: "relative",
     overflow: "hidden",
@@ -68,10 +77,15 @@ const useStyles = makeStyles((theme) => ({
       zIndex: 1,
     },
   },
+  blurWrapperNoBlur: {
+    position: "relative",
+    overflow: "hidden",
+  },
 }));
 
 const ModalExp = ({ children = {}, Team = [] }) => {
-  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const classes = useStyles();
   const [openModalIndex, setOpenModalIndex] = useState(null);
 
@@ -84,7 +98,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -94,17 +108,24 @@ const ModalExp = ({ children = {}, Team = [] }) => {
 
   return (
     <div className={classes.root}>
-      <div className={classes.blurWrapper}>
+      <div
+        className={isMobile ? classes.blurWrapperNoBlur : classes.blurWrapper}
+      >
         <Carousel
           style={{ maxHeight: "10vh" }}
           responsive={responsive}
           infinite
           autoPlaySpeed={2000}
           autoPlay
-          centerMode
+          centerMode={isMobile ? false : true}
         >
           {Team.map((item, index) => (
-            <div key={index} className={classes.carouselItem}>
+            <div
+              key={index}
+              className={
+                isMobile ? classes.carouselItem : classes.carouselMobItem
+              }
+            >
               <Paper
                 component={StyledButtonBase}
                 className={classes.PaperCont}
@@ -123,34 +144,31 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                     <Avatar
                       src={item.src}
                       style={{
-                        height: "25vh",
-                        width: "25vh",
-                        top: isMobile ? "0" : "0%",
-                        right: isMobile ? "15%" : null,
-                        left: isMobile ? null : "0%",
+                        height: isMobile ? "30vh" : "25vh",
+                        width: isMobile ? "30vh" : "25vh",
+                        left: isMobile ? "-11.5vh" : null,
                       }}
                     />
                   </Grid>
-                  <Grid item xs>
-                    <Box style={{ marginLeft: "2vh" }} textAlign={"left"}>
-                      <Typography
-                        align="center"
-                        variant={isMobile ? "h1" : "h1"}
-                      >
-                        {item.NickName}
-                      </Typography>
-                      <Typography variant="h4">{item.CardTitle}</Typography>
-                      <Typography variant="h4"> {item.CardContent}</Typography>
-                    </Box>
-                  </Grid>
+                  {!isMobile && (
+                    <Grid item xs>
+                      <Box style={{ marginLeft: "2vh" }} textAlign={"left"}>
+                        <Typography align="center" variant={"h1"}>
+                          {item.NickName}
+                        </Typography>
+                        <Typography variant="h4">{item.CardTitle}</Typography>
+                        <Typography variant="h4">{item.CardContent}</Typography>
+                      </Box>
+                    </Grid>
+                  )}
                 </Grid>
               </Paper>
               <Modal open={openModalIndex === index} onClose={handleClose}>
                 <Grid
                   container
                   style={{
-                    left: "3vw",
-                    width: "80vw",
+                    left: isMobile ? "1vw" : "8vw",
+                    width: isMobile ? "95vw" : "80vw",
                     borderRadius: "50px",
                     position: "absolute",
                     top: "5vh",

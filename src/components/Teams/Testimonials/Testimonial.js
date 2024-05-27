@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(4),
     margin: "auto",
-    width: "90vw",
+    width: "80vw",
     height: "80vh",
     backgroundColor: "#d6d6d6",
     borderRadius: "50px",
@@ -27,11 +27,6 @@ const useStyles = makeStyles((theme) => ({
     "&::-webkit-scrollbar": {
       width: "0", // Hide scrollbar
       height: "0",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "100vw",
-      padding: theme.spacing(2),
-      borderRadius: "50px",
     },
   },
 
@@ -73,7 +68,14 @@ export default function Testimonial({ Team = [] }) {
           <div className={classes.root}>
             <Paper className={classes.paper} elevation={10}>
               <Grid container spacing={2}>
-                <Grid item>
+                <Grid
+                  item
+                  style={{
+                    display: isMobile ? "block" : false,
+                    marginLeft: isMobile ? "auto" : false,
+                    marginRight: isMobile ? "auto" : false,
+                  }}
+                >
                   <div className={classes.image}>
                     <Avatar
                       className={classes.img}
@@ -82,7 +84,7 @@ export default function Testimonial({ Team = [] }) {
                     />
                   </div>
                 </Grid>
-                <Grid item xs={isMobile ? 12 : 3} sm container>
+                <Grid item sm container>
                   <Grid
                     item
                     xs
@@ -95,44 +97,70 @@ export default function Testimonial({ Team = [] }) {
                   >
                     <Grid
                       item
-                      xs={isMobile ? 8 : 5}
-                      style={{ borderRight: "1px solid black" }}
+                      xs={isMobile ? null : 5}
+                      style={{
+                        borderRight: isMobile ? null : "1px solid black",
+                      }}
                     >
                       <Box>
                         <Typography
+                          align={isMobile ? "center" : "left"}
                           className={classes.bio}
                           style={{ fontSize }}
                         >
                           {`${item.FirstName}
                            ${item.LastName}`}
                         </Typography>
-                        <Typography className={classes.bio}></Typography>
-                        <Typography>{item.Course}</Typography>
-                        <Typography variant="subtitle1">
+                        <Typography
+                          align={isMobile ? "center" : "left"}
+                          className={classes.bio}
+                        ></Typography>
+                        <Typography align={isMobile ? "center" : "left"}>
+                          {item.Course}
+                        </Typography>
+                        <Typography
+                          align={isMobile ? "center" : "left"}
+                          variant="subtitle1"
+                        >
                           {item.School}
+                          {isMobile ? item.Introduction : null}
                         </Typography>
                       </Box>
                     </Grid>
                     <Grid item xs={isMobile ? 8 : 5}>
                       <Box>
-                        <Typography align="justify" className={classes.bio}>
-                          {item.Introduction}
+                        <Typography
+                          align={isMobile ? "center" : "left"}
+                          className={classes.bio}
+                        >
+                          {isMobile ? null : item.Introduction}
                         </Typography>
                       </Box>
                     </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
-                  <i class="fa-solid fa-quote-right fa-10x fa-fade" />
+                  {isMobile ? null : (
+                    <i class="fa-solid fa-quote-right fa-10x fa-fade" />
+                  )}
                 </Grid>
                 <Grid item xs={12} style={{ margin: "10px 30px 0 30px" }}>
-                  <Typography variant="h4" align="justify">
+                  <Typography
+                    variant="h4"
+                    align={isMobile ? "center" : "justify"}
+                  >
                     &nbsp; &nbsp; &nbsp; &nbsp;{item.Testimony}
                   </Typography>
-                  <Typography variant="h4" align="justify">
+                  <Typography
+                    variant="h4"
+                    align={isMobile ? "center" : "justify"}
+                  >
                     &nbsp; &nbsp; &nbsp; &nbsp;{item.Body}
                   </Typography>
-                  <Typography variant="h4" align="justify">
+                  <Typography
+                    variant="h4"
+                    align={isMobile ? "center" : "justify"}
+                  >
                     &nbsp; &nbsp; &nbsp; &nbsp;{item.Quote}
                   </Typography>
                 </Grid>
