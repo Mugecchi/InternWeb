@@ -12,17 +12,21 @@ import { Avatar, Box, useMediaQuery, useTheme } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
   paper: {
     padding: theme.spacing(4),
     margin: "auto",
-    maxWidth: 1300,
-    minHeight: 650,
+    width: "175vh",
+    height: "80vh",
     backgroundColor: "#d6d6d6",
     borderRadius: "50px",
     [theme.breakpoints.down("sm")]: {
-      width: "50%",
-      height: "100%",
+      width: "100%",
+      padding: theme.spacing(2),
+      borderRadius: "20px",
     },
   },
   image: {
