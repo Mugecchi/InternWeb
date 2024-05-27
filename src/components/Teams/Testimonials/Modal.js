@@ -5,6 +5,7 @@ import {
   ButtonBase,
   Avatar,
   Paper,
+  Container,
   makeStyles,
   styled,
   Grid,
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "30px",
     position: "relative",
     overflow: "hidden",
-    width: 800,
+    width: "80vh",
     height: "100%",
     boxShadow: 24,
     borderRadius: "50px",
@@ -84,7 +85,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -145,7 +146,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                 <Grid
                   container
                   style={{
-                    left: "4vh",
+                    left: "5vh",
                     width: "100vh",
                     borderRadius: "50px",
                     position: "absolute",
