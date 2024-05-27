@@ -123,8 +123,8 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                     <Avatar
                       src={item.src}
                       style={{
-                        height: 200,
-                        width: 200,
+                        height: "25vh",
+                        width: "25vh",
                         top: isMobile ? "0" : "0%",
                         right: isMobile ? "15%" : null,
                         left: isMobile ? null : "0%",
@@ -146,7 +146,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                 <Grid
                   container
                   style={{
-                    left: "5vh",
+                    left: "3vw",
                     width: "100vh",
                     borderRadius: "50px",
                     position: "absolute",
