@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(4),
     margin: "auto",
-    width: "175vh",
+    width: "90vw",
     height: "80vh",
     backgroundColor: "#d6d6d6",
     borderRadius: "50px",
@@ -29,15 +29,15 @@ const useStyles = makeStyles((theme) => ({
       height: "0",
     },
     [theme.breakpoints.down("sm")]: {
-      width: "100%",
+      width: "100vw",
       padding: theme.spacing(2),
-      borderRadius: "20px",
+      borderRadius: "50px",
     },
   },
 
   image: {
-    width: 200,
-    height: 200,
+    width: "25vh",
+    height: "25vh",
   },
   img: {
     margin: "auto",
@@ -54,6 +54,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Testimonial({ Team = [] }) {
   const classes = useStyles();
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+  const isMediumScreen = useMediaQuery("(max-width:960px)");
+  let fontSize = "3rem";
+  if (isSmallScreen) {
+    fontSize = "1rem";
+  } else if (isMediumScreen) {
+    fontSize = "1rem";
+  }
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const key = Object.values(Team);
@@ -78,7 +86,7 @@ export default function Testimonial({ Team = [] }) {
                   <Grid
                     item
                     xs
-                    style={{ marginLeft: "10px" }}
+                    style={{ marginLeft: "1vw" }}
                     spacing={2}
                     container
                     direction="row"
@@ -93,7 +101,7 @@ export default function Testimonial({ Team = [] }) {
                       <Box>
                         <Typography
                           className={classes.bio}
-                          style={{ fontSize: 40 }}
+                          style={{ fontSize }}
                         >
                           {`${item.FirstName}
                            ${item.LastName}`}
