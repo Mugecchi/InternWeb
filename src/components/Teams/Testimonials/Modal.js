@@ -146,7 +146,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                 <Grid
                   container
                   style={{
-                    left: "5vh",
+                    left: "4vw",
                     width: "100vh",
                     borderRadius: "50px",
                     position: "absolute",

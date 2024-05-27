@@ -112,7 +112,7 @@ export default function Testimonial({ Team = [] }) {
                 </Grid>
                 <Grid item xs={12} style={{ margin: "10px 30px 0 30px" }}>
                   <Typography variant="h5" align="justify">
-                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp;{item.Testimonial}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {item.Body}
                   </Typography>
                 </Grid>
