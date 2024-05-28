@@ -74,7 +74,6 @@ const Faqs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log(formState);
   };
 
@@ -114,9 +113,11 @@ const Faqs = () => {
               />
             </Grid>
           </Grid>
-          <Grid>
-            <Grid>
+          <Grid container xs={12} spacing={0}>
+            <Grid item xs={1}>
               <label>Subject</label>
+            </Grid>
+            <Grid item xs={3}>
               <input
                 type="text"
                 name="subject"
