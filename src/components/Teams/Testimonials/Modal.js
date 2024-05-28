@@ -158,8 +158,6 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                         <Typography align="right" variant={"h4"}>
                           - {item.NickName} (2024)
                         </Typography>
-                        <Typography variant="h5">{item.CardTitle}</Typography>
-                        <Typography variant="h5">{item.CardContent}</Typography>
                       </Box>
                     </Grid>
                   )}
