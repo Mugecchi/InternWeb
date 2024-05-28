@@ -4,6 +4,8 @@ import Faqs from "./components/Faqs";
 import ContactUs from "./components/ContactUs";
 import InternData from "./components/Teams/Testimonials/InternData";
 import Accordion from "./components/InternTeam/Accordion";
+import YoutubePlayer from "./components/VideoStream/youtube";
+
 const routes = [
   {
     path: "/",
@@ -30,6 +32,10 @@ const routes = [
         path: "accordion",
         element: Accordion,
       },
+      {
+        path: "youtube",
+        element: YoutubePlayer
+      }
     ],
   },
 ];
