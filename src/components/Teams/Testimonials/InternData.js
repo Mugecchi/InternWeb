@@ -123,12 +123,33 @@ export default function InternData() {
           were truly impressive. I am confident that i will excel in any future
           endeavors and would highly recommend them for any role they pursue.",
           <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;The internship offered a holistic
+          development experience through regular brainstorming sessions, team
+          collaborations, and even weekly bible studies. These activities not
+          only enhanced my technical expertise but also improved my way on how
+          to work with team, ethical values, and a balanced approach to
+          professional life.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;I am grateful for the opportunity to have
+          been part of such an innovative and supportive team, and I am
+          confident that the skills and insights I have acquired will greatly
+          benefit my future career.
+          <br /> <br />
+          Being part of this little company that is continue growing day by day
+          it is my pleasure to give my best to this company even i graduate i
+          will neber forget the things that happen to me here. The learnings and
+          memories that i experience. "Accept the challenge don’t be afraid to
+          make a mistake, mistake will taught you a lesson."
         </p>
       ),
       src: Randy,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "",
+      CardContent: (
+        <p>
+          "Accept the challenge don’t be afraid to make a mistake, mistake will
+          taught you a lesson."
+        </p>
+      ),
     },
     {
       LastName: "Yamat",
@@ -267,8 +288,7 @@ export default function InternData() {
           repetitive work. This has made me{" "}
           <span style={{ fontWeight: 800 }}> FLEXIBLE AND ADAPTABLE </span> from
           various perspectives.
-          <br />
-          <br />
+          <br /> <br />
           &nbsp; &nbsp; &nbsp; &nbsp;Throughout my entire internship program,
           the guidance I received was{" "}
           <span style={{ fontWeight: 800 }}> EXCEPTIONAL. </span> My supervisors
@@ -349,8 +369,7 @@ export default function InternData() {
           was able to meet clients with diverse working ethics and of course I
           was able to be part of a team with much dedication towards excellence
           and quality.
-          <br />
-          <br />
+          <br /> <br />
           &nbsp; &nbsp; &nbsp; &nbsp;My stay in Radztech for my internship
           equipped me to be a competent individual. They have seen the potential
           in me and I will forever be grateful for the valuable learnings and

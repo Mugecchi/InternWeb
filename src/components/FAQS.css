@@ -49,7 +49,7 @@
 
 .category {
   background-color: #3a8b74;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 8px 15px; /* Reduced padding */
   border-radius: 5px;
   cursor: pointer;
