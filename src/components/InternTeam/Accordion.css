@@ -23,7 +23,6 @@ body {
   flex-grow: 1;
   transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 75px 0 75px 0;
-
 }
 
 .slider li:hover {
@@ -66,14 +65,12 @@ body {
   text-align: center;
 }
 
-
-
 .slider .one {
-  background-image: url(https://unsplash.it/800/600/?random);
+  background-image: url(./InternImages//Dev\ Ado.png);
 }
 
 .slider .two {
-  background-image: url(https://unsplash.it/801/600/?random);
+  background-image: url(./InternImages/Dev\ Ben.png);
 }
 
 .slider .three {
@@ -88,39 +85,38 @@ body {
   background-image: url(https://unsplash.it/804/600/?random);
 }
 
-.slider .six{
+.slider .six {
   background-image: url(https://unsplash.it/805/600/?random);
 }
 
-.slider .seven{
+.slider .seven {
   background-image: url(https://unsplash.it/806/600/?random);
 }
 
-.slider .eight{
+.slider .eight {
   background-image: url(https://unsplash.it/807/600/?random);
 }
 
-.slider .nine{
+.slider .nine {
   background-image: url(https://unsplash.it/808/600/?random);
 }
 
-.slider .ten{
+.slider .ten {
   background-image: url(https://unsplash.it/809/600/?random);
 }
 
-.slider .eleven{
+.slider .eleven {
   background-image: url(https://unsplash.it/810/600/?random);
 }
 
-.slider .twelve{
+.slider .twelve {
   background-image: url(https://unsplash.it/811/600/?random);
 }
 
-.slider .thirteen{
+.slider .thirteen {
   background-image: url(https://unsplash.it/812/600/?random);
 }
 
-.slider .fourteen{
+.slider .fourteen {
   background-image: url(https://unsplash.it/813/600/?random);
 }
-

@@ -4,6 +4,7 @@ import bg from "../images/bg 2.png";
 import overlay from "../images/overlay.png";
 import WAVE from "../images/WAVE.svg";
 import InternData from "./Teams/Testimonials/InternData";
+import Slider from "./InternTeam/Accordion";
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
@@ -55,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   secondaryPanel: {
     position: "relative",
     background: "#011c25",
-    padding: "20px",
+    padding: "10vh 0vh",
   },
 }));
 
@@ -90,7 +91,9 @@ const Home = () => {
           <img alt="Wave" src={WAVE} className={classes.WAVE} />
         </div>
       </div>
-      <div className={classes.primaryPanel}></div>
+      <div className={classes.primaryPanel}>
+        <Slider />
+      </div>
 
       <div className={classes.secondaryPanel}>
         <InternData />
