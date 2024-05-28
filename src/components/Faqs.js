@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./FAQS.css";
-
+import { Grid } from "@material-ui/core";
 const Faq = ({ question, answer, isOpen, onClick }) => {
   return (
     <div className="faq-container">
@@ -20,17 +20,26 @@ const Faq = ({ question, answer, isOpen, onClick }) => {
 
 const Faqs = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const [formState, setFormState] = useState({
+    fullName: "",
+    subject: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
   const faqs = [
     {
       question: "1. What courses are accepted?",
       answer: [
-        "BSA",
-        "BSMA",
-        "BSAIS",
-        "BSBA MAJOR IN MARKETING",
-        "BSCS",
-        "BSIT",
+        "Bachelor of Science in Accountancy",
+        "Bachelor of Sciencce in Management Accounting",
+        "Bachelor of Sciencce in Accounting information System",
+        "Bachelor of Science in Business Administration Major in Marketting",
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "AB in Mass Communication",
+        "AB in Public Administration",
         "Other related courses",
       ],
     },
@@ -58,20 +67,97 @@ const Faqs = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormState({ ...formState, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log(formState);
+  };
+
   return (
     <div className="faq-page">
       <h1 className="faq-title">F.A.Q.</h1>
       <div className="faq-popular-questions">
         <h2>Particular Questions</h2>
         {faqs.map((faq, index) => (
-          <Faq
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={openIndex === index}
-            onClick={() => handleToggle(index)}
-          />
+          <Grid container xs={12} spacing={0}>
+            <Grid item key={index} xs={4} style={{ marginTop: "0.5vh" }}>
+              <Faq
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openIndex === index}
+                onClick={() => handleToggle(index)}
+              />
+            </Grid>
+          </Grid>
         ))}
+      </div>
+      <div className="contact-us">
+        <h2>Contact Us</h2>
+        <form onSubmit={handleSubmit} className="contact-form">
+          <Grid container xs={12} spacing={0}>
+            <Grid item xs={1}>
+              <label>Full name</label>
+            </Grid>
+            <Grid item xs={3}>
+              <input
+                type="text"
+                name="fullName"
+                value={formState.fullName}
+                onChange={handleInputChange}
+                placeholder="Enter your full name"
+                required
+              />
+            </Grid>
+          </Grid>
+          <Grid>
+            <Grid>
+              <label>Subject</label>
+              <input
+                type="text"
+                name="subject"
+                value={formState.subject}
+                onChange={handleInputChange}
+                placeholder="Enter your subject"
+              />
+            </Grid>
+          </Grid>
+          <Grid>
+            <label>Email*</label>
+            <input
+              type="email"
+              name="email"
+              value={formState.email}
+              onChange={handleInputChange}
+              placeholder="Enter your email"
+              required
+            />
+          </Grid>
+          <Grid>
+            <label>Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              value={formState.phone}
+              onChange={handleInputChange}
+              placeholder="Enter your phone number"
+            />
+          </Grid>
+          <Grid>
+            <label>Message</label>
+            <textarea
+              name="message"
+              value={formState.message}
+              onChange={handleInputChange}
+              placeholder="Type your message here..."
+            ></textarea>
+          </Grid>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
   );

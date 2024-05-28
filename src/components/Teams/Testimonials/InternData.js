@@ -19,51 +19,143 @@ export default function InternData() {
     {
       LastName: "Rivera",
       FirstName: "Jon Carlo Miguel",
-      Qoute: "sample quote",
+      Quote: <h3>"Some complex questions have the simplest answers."</h3>,
       Course: "BS Computer Science ",
       School: "Isabela State University - Cauayan Campus",
-      Introduction: "Hi I am BayMax and I like warm hugs",
-      Testimony: "Late pero papasok parin",
-      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
+      Introduction: (
+        <h2>
+          Hi I am Jon Carlo Miguel C. Rivera, an aspiring Data Analyst am here
+          to tell you a testament of my life during my internship in RadzTech.
+        </h2>
+      ),
+      Testimony:
+        "I want to take a moment to reflect on my journey with Radztech over the past few months. It has been an incredible experience, one filled with challenges, growth, and ultimately, immense satisfaction.",
+      Body: (
+        <p>
+          &nbsp; &nbsp; &nbsp; &nbsp;Starting as an intern, I was uncertain of
+          what to expect. However, from the very first day of orientation, I
+          knew I was part of something special. Meeting the leaders of Radztech
+          and learning about the company's humble beginnings sparked a sense of
+          inspiration within me. It was clear that I was joining a team driven
+          by innovation and a commitment to excellence. Throughout my
+          internship, I had the opportunity to immerse myself in various
+          projects and tasks, each one pushing me to expand my skills and
+          knowledge. From designing and developing landing pages to tackling
+          complex system functionalities, every assignment brought its own set
+          of challenges. However, with the guidance of my mentors and the
+          support of my colleagues, I embraced each challenge head-on,
+          determined to succeed.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;One particular project stands out in my
+          mind—the development of the dynamic table component. It was a task
+          that tested my abilities and pushed me to think creatively. Despite
+          encountering obstacles along the way, I persevered, seeking advice
+          when needed and refining my approach until I achieved the desired
+          outcome. The sense of accomplishment upon completing the project was
+          indescribable, a testament to the power of dedication and teamwork. Of
+          course, no journey is without its hurdles. There were moments of
+          frustration and doubt, times when progress seemed elusive. Yet, it was
+          during these moments that I witnessed the true strength of our team.
+          We supported each other, lending a helping hand and offering words of
+          encouragement when needed most. Together, we overcame obstacles that
+          once seemed insurmountable, emerging stronger and more resilient than
+          before.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;As I reflect on my time at Radztech, I am
+          filled with gratitude—for the opportunities afforded to me, for the
+          lessons learned, and most importantly, for the friendships forged
+          along the way. Each day brought new experiences, new challenges, and
+          new reasons to be thankful for being part of such a remarkable team.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;Moving forward, I carry with me the lessons
+          and memories from my internship at Radztech. They have shaped me into
+          a better professional and a better person, instilling within me a
+          sense of confidence and determination to face whatever challenges lie
+          ahead.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;Thank you, Radztech, for believing in me,
+          for challenging me, and for inspiring me to reach new heights. I am
+          proud to have been part of this journey, and I look forward to the
+          opportunities that lie ahead for us all.
+        </p>
+      ),
       src: Migs,
-      CardTitle: "Tara Kape -Migs 2024 : To Infinity and Beyond",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "Migz",
+      CardContent: "O-genki dayo minna-san Ore no namae wa Miggui desu. ",
     },
     {
       LastName: "Maranan",
       FirstName: "Adonis",
       NickName: "Ado",
-      Qoute: "Anya mittin",
+      Quote: (
+        <h3>
+          "Kung hindi mo alam edi aralin mo, Lahat ng bagay ay ina aral bago
+          gawin, maliban kay GPT 🙂"
+        </h3>
+      ),
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
-      Introduction: "Hi I am BayMax and I like warm hugs",
-      Testimony: "Tumatakas pag bibili ng Ulam",
+      Introduction: "Hi I'm i ano ba ilalagay ko dito",
+      Testimony: "HAHAHA DIKO PA ALAM ILALAGAY ",
       Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
       src: Adonis,
-      CardTitle: "Opo, mahilig ako mag alaga ng hayop",
+      CardTitle:
+        "Mama mo blue -Ado 2024: Bumili ka ng notebook mo para dika mag loading sa instructions samahan monarin ng ballpen",
       CardContent:
-        "Nagbebenta ng kambing, pato, baboy, manok, rabbit, kalapati",
+        "Hi! I'm Adonis wala pala ako nickname kaya Ado nalang 🙂, I'm always listening to the instructions kala mo gets kono? loading parin utak kodon, hindi lang po ako programmer meron rin po ako mini zoo sa bahay",
     },
     {
       LastName: "Antalan",
       FirstName: "Randy Jr.",
       NickName: "Ran",
-      Qoute: "Tara kape",
+      Quote: <h2>"Accept the Challenge, Push Yourself to the Limit"</h2>,
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
-      Introduction: "Hi I am BayMax and I like warm hugs",
-      Testimony: "Late pero papasok parin",
-      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
+      Introduction: <h1>Hi I'm Ran the Fast talker na kabado</h1>,
+      Testimony:
+        "As an intern at here at RBS it was an great oportunity to be part of this company. Many things happen when I start my internship here. Intenship help me to boost my self confidence. I am grateful to be part of this company even for a short time the things I learn here will become a big help in my future. Throughout this journey I realize many things that I have many things that I need to fix.",
+      Body: (
+        <p>
+          &nbsp; &nbsp; &nbsp; &nbsp;Throughout this OJT, I demonstrated
+          exceptional dedication, a strong work ethic, and a keen willingness to
+          learn. I quickly adapted to our team and contributed significantly to
+          several key projects. Their attention to detail and proactive approach
+          were truly impressive. I am confident that i will excel in any future
+          endeavors and would highly recommend them for any role they pursue.",
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;The internship offered a holistic
+          development experience through regular brainstorming sessions, team
+          collaborations, and even weekly bible studies. These activities not
+          only enhanced my technical expertise but also improved my way on how
+          to work with team, ethical values, and a balanced approach to
+          professional life.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;I am grateful for the opportunity to have
+          been part of such an innovative and supportive team, and I am
+          confident that the skills and insights I have acquired will greatly
+          benefit my future career.
+          <br /> <br />
+          Being part of this little company that is continue growing day by day
+          it is my pleasure to give my best to this company even i graduate i
+          will neber forget the things that happen to me here. The learnings and
+          memories that i experience. "Accept the challenge don’t be afraid to
+          make a mistake, mistake will taught you a lesson."
+        </p>
+      ),
       src: Randy,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "",
+      CardContent: (
+        <p>
+          "Accept the challenge don’t be afraid to make a mistake, mistake will
+          taught you a lesson."
+        </p>
+      ),
     },
     {
       LastName: "Yamat",
       FirstName: "Benedick",
       NickName: "Ben",
-      Qoute: "Tara kape",
+      Quote: "Tara kape",
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
       Introduction: "Hi I am BayMax and I like warm hugs",
@@ -78,7 +170,7 @@ export default function InternData() {
       LastName: "Palting",
       FirstName: "Joemar",
       NickName: "Joms",
-      Qoute: "Tara kape",
+      Quote: "Tara kape",
       Course: "BS Information Technology ",
       School: "Isabela State University - Cauayan Campus",
       Introduction: "Hi I am BayMax and I like warm hugs",
@@ -92,8 +184,13 @@ export default function InternData() {
     {
       LastName: "Batara",
       FirstName: "Joan",
-      NickName: "Jo",
-      Qoute: "Tara kape",
+      NickName: "Guo",
+      Quote: (
+        <h3>
+          "You’ll never know what’s ahead of you when you limit yourself. Have
+          the courage to try and explore."
+        </h3>
+      ),
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
       Introduction: "Bonjour!  Set your mind and enjoy reading",
@@ -149,7 +246,7 @@ export default function InternData() {
       LastName: "Sejalvo",
       FirstName: "Novelyn",
       NickName: "Novs",
-      Qoute: "Tara kape",
+      Quote: "Tara kape",
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
       Introduction: "Hi I am BayMax and I like warm hugs",
@@ -164,12 +261,52 @@ export default function InternData() {
       LastName: "Respicio",
       FirstName: "Ryan",
       NickName: "Ry",
-      Qoute: "Tara kape",
+      Quote: <h3>"STAPPPppppp"</h3>,
       Course: "BS Management Accounting ",
       School: "Isabela State University - Cauayan Campus",
-      Introduction: "Hi I am BayMax and I like warm hugs",
-      Testimony: "Late pero papasok parin",
-      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
+      Introduction: "Hi, I’m Ry, Nonchalant na OA",
+      Testimony: (
+        <>
+          "When I received the news that I had been selected as an intern at
+          RBS, I initially felt uncertain about joining the program. I doubted
+          myself whether I could successfully handle all the tasks they would
+          assign to me. But I’m wrong, they made my
+          <span style={{ fontWeight: 800 }}> UNCERTAINTIES </span> into
+          <span style={{ fontWeight: 800 }}> OPPORTUNITIES </span>
+          helping me prepare for the real world of a corporate life."
+        </>
+      ),
+      Body: (
+        <p>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          <span style={{ fontWeight: 800 }}>
+            {" "}
+            AT RBS, THIS ISN'T YOUR TYPICAL INTERNSHIP.{" "}
+          </span>
+          I've encountered a diverse range of work that I really enjoyed. Each
+          week brings a new surprise task, ensuring that we are not going to do
+          repetitive work. This has made me{" "}
+          <span style={{ fontWeight: 800 }}> FLEXIBLE AND ADAPTABLE </span> from
+          various perspectives.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;Throughout my entire internship program,
+          the guidance I received was{" "}
+          <span style={{ fontWeight: 800 }}> EXCEPTIONAL. </span> My supervisors
+          addressed all my inquiries with thorough{" "}
+          <span style={{ fontWeight: 800 }}> GUIDANCE. </span> Their willingness
+          to share their expertise made a lasting impact on my{" "}
+          <span style={{ fontWeight: 800 }}> DEVELOPMENT </span> that I will
+          carry for the rest of my life. But the most important thing I will
+          remember is they taught me how to be a{" "}
+          <span style={{ fontWeight: 800 }}> GOOD PERSON </span> no matter what
+          or where you are.{" "}
+          <span style={{ fontWeight: 800 }}>
+            {" "}
+            MARAMING SALAMAT, MAHAL KONG RBS.{" "}
+          </span>
+          <br /> <br />
+        </p>
+      ),
       src: Ryan,
       CardTitle:
         "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
@@ -179,7 +316,7 @@ export default function InternData() {
       LastName: "Medina",
       FirstName: "Frenalyn",
       NickName: "Frenalyn",
-      Qoute: "",
+      Quote: "",
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
       Introduction: "Hi! I am Frenalyn, good to see you!",
@@ -216,7 +353,7 @@ export default function InternData() {
       LastName: "Medina",
       FirstName: "Frenan",
       NickName: "Frenan",
-      Qoute: "",
+      Quote: <h3>"Manifest lang nang manifest"</h3>,
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
       Introduction: "Hi, I’m FreNen, este FRENAN",
@@ -224,15 +361,20 @@ export default function InternData() {
         "I still vividly remember the day our Professor referred Radztech to me. July 07, 2023. I am offered to host the graduation ceremony of my seniors. The first time I met Radztech. And our professor once told me, Dun kayo sa Radztech, maganda dun. That moment feels surreal. As each company representative ended their speech I once said I can't wait to be part of your team, soon.",
       Body: (
         <p>
-          It's a dream of mine to be in a company that will help me achieve
-          professional and personal growth, and through Radztech i am able to do
-          so. I manifested to be part of the team. Posted on X (Twitter) "
-          Radztech cutieee " Low and behold, Radztech accepted me. Radztech
-          opened so many opportunities for me, I was able to meet clients with
-          diverse working ethics and of course I was able to be part of a team
-          with much dedication towards excellence and quality.
-          <br />
-          <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;It's a dream of mine to be in a company
+          that will help me achieve professional and personal growth, and
+          through Radztech i am able to do so. I manifested to be part of the
+          team. Posted on X (Twitter) " Radztech cutieee " Low and behold,
+          Radztech accepted me. Radztech opened so many opportunities for me, I
+          was able to meet clients with diverse working ethics and of course I
+          was able to be part of a team with much dedication towards excellence
+          and quality.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;My stay in Radztech for my internship
+          equipped me to be a competent individual. They have seen the potential
+          in me and I will forever be grateful for the valuable learnings and
+          experiences. My manifestations turned to reality, manifestations
+          really work.
         </p>
       ),
       src: Frenan,
@@ -244,7 +386,7 @@ export default function InternData() {
       LastName: "Medrano",
       FirstName: "Ma. Andrea Antonette",
       NickName: "Andeng",
-      Qoute: "Tara kape",
+      Quote: "",
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
       Introduction:
@@ -300,22 +442,22 @@ export default function InternData() {
         </p>
       ),
       src: Andeng,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "",
+      CardContent:
+        "If you want it easy and simple, then Radztech may not be for you.",
     },
     {
       LastName: "Aquino",
       FirstName: "Angelina",
       NickName: "Angie",
-      Qoute: (
-        <p>
+      Quote: (
+        <h3>
           You can’t skip chapters, that’s not how life works. Some chapters will
           make you cry for weeks. You will read things you don’t want to read,
           you will have moments when you don’t want the pages to end. But you
           have to keep going. Live yours, don’t miss out.
           <br />- Courtney Peppernell, Healing the Heart
-        </p>
+        </h3>
       ),
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
@@ -357,7 +499,7 @@ export default function InternData() {
       LastName: "Ramel",
       FirstName: "Patricia Fae",
       NickName: "Pat",
-      Qoute: "",
+      Quote: "",
       Course: "BS Management Accounting",
       School: "Isabela State University - Echague Campus",
       Introduction:
@@ -409,11 +551,10 @@ export default function InternData() {
       LastName: "Agonoy",
       FirstName: "Isah Janriel",
       NickName: "Isah",
-      Qoute: "Tara kape",
+      Quote: "Tara kape",
       Course: "BS Accounting Information System ",
       School: "Isabela State University - Cauayan Campus",
       Introduction: "Hi I am BayMax and I like warm hugs",
-      DoB: "11/11/2001",
       Testimony: "Late pero papasok parin",
       Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
       src: Novelyn,

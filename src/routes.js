@@ -13,7 +13,11 @@ const routes = [
         path: "/",
         element: Home,
       },
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 1c894892e5e1e16e314fcb24a1c96638d25b149d
       {
         path: "faqs",
         element: Faqs,
