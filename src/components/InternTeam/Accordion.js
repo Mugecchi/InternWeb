@@ -1,13 +1,11 @@
-import React from 'react';
-import './Accordion.css';  // Make sure to create this CSS file
+import React from "react";
+import "./Accordion.css"; // Make sure to create this CSS file
 
 const Slider = () => {
   return (
     <ul className="slider">
       <li className="one">
-        <a href="#">
-          <h1>Adonis</h1>
-        </a>
+        <a href="#"></a>
       </li>
       <li className="two">
         <a href="#">
@@ -56,8 +54,8 @@ const Slider = () => {
       </li>
       <li className="eleven">
         <a href="#">
-          <h1>Novelyn</h1>
-\        </a>
+          <h1>Novelyn</h1>\{" "}
+        </a>
       </li>
       <li className="twelve">
         <a href="#">
