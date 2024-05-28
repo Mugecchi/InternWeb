@@ -156,8 +156,8 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                         <Typography align="center" variant={"h1"}>
                           {item.NickName}
                         </Typography>
-                        <Typography variant="h4">{item.CardTitle}</Typography>
-                        <Typography variant="h4">{item.CardContent}</Typography>
+                        <Typography variant="h5">{item.CardTitle}</Typography>
+                        <Typography variant="h5">{item.CardContent}</Typography>
                       </Box>
                     </Grid>
                   )}
