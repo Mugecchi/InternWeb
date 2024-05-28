@@ -5,7 +5,9 @@ const Slider = () => {
   return (
     <ul className="slider">
       <li className="one">
-        <a href="#"></a>
+        <a href="#">
+          <h1>Adonis</h1>
+        </a>
       </li>
       <li className="two">
         <a href="#">
@@ -14,17 +16,17 @@ const Slider = () => {
       </li>
       <li className="three">
         <a href="#">
-          <h1>Joemar</h1>
+          <h1>Migui</h1>
         </a>
       </li>
       <li className="four">
         <a href="#">
-          <h1>Migui</h1>
+          <h1>Randy</h1>
         </a>
       </li>
       <li className="five">
         <a href="#">
-          <h1>Randy</h1>
+          <h1>Andrea</h1>
         </a>
       </li>
       <li className="six">
@@ -34,37 +36,37 @@ const Slider = () => {
       </li>
       <li className="seven">
         <a href="#">
-          <h1>Andrea</h1>
+          <h1>Frenalyn</h1>
         </a>
       </li>
       <li className="eight">
         <a href="#">
-          <h1>Frenalyn</h1>
+          <h1>Joan</h1>
         </a>
       </li>
       <li className="nine">
         <a href="#">
-          <h1>Frenan</h1>
+          <h1>Novelyn</h1>
         </a>
       </li>
       <li className="ten">
         <a href="#">
-          <h1>Joan</h1>
+          <h1>Patricia</h1>
         </a>
       </li>
       <li className="eleven">
         <a href="#">
-          <h1>Novelyn</h1>\{" "}
+          <h1>Frenan</h1>\{" "}
         </a>
       </li>
       <li className="twelve">
         <a href="#">
-          <h1> Patricia</h1>
+          <h1>Ryan</h1>
         </a>
       </li>
       <li className="thirteen">
         <a href="#">
-          <h1>Ryan</h1>
+          <h1>Joemar</h1>
         </a>
       </li>
       <li className="fourteen">
