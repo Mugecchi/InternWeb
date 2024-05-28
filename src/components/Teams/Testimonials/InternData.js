@@ -80,7 +80,7 @@ export default function InternData() {
         </p>
       ),
       src: Migs,
-      CardTitle: "Migz",
+      NickName: "Migz",
       CardContent: "O-genki dayo minna-san Ore no namae wa Miggui desu. ",
     },
     {

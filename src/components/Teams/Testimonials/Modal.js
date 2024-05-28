@@ -146,18 +146,18 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                       style={{
                         height: isMobile ? "30vh" : "25vh",
                         width: isMobile ? "30vh" : "25vh",
-                        left: isMobile ? "-11.5vh" : null,
+                        left: isMobile ? "-11vh" : null,
                       }}
                     />
                   </Grid>
                   {!isMobile && (
                     <Grid item xs>
                       <Box style={{ marginLeft: "2vh" }} textAlign={"left"}>
-                        <Typography align="center" variant={"h1"}>
-                          {item.NickName}
+                        <Typography variant="h5">{item.CardTitle}</Typography>
+                        <Typography variant="h5">{item.CardContent}</Typography>
+                        <Typography align="right" variant={"h4"}>
+                          - {item.NickName} (2024)
                         </Typography>
-                        <Typography variant="h4">{item.CardTitle}</Typography>
-                        <Typography variant="h4">{item.CardContent}</Typography>
                       </Box>
                     </Grid>
                   )}

@@ -92,6 +92,11 @@ const Home = () => {
         </div>
       </div>
       <div className={classes.primaryPanel}>
+        <Typography align="center">
+          <Box fontFamily={"poppins"} fontSize={"4rem"} fontWeight={800}>
+            TEAMS
+          </Box>
+        </Typography>
         <Slider />
       </div>
 
