@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   carouselItem: {
-    margin: "2vh",
+    margin: "8vh",
   },
   carouselMobItem: {
     margin: "0vh",
