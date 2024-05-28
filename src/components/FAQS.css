@@ -2,34 +2,35 @@
   font-family: "Poppins", sans-serif;
   background-color: #ff7704;
   color: white;
-  padding: 10px; /* Reduced overall padding */
+  padding: 10px;
 }
 
 .faq-title {
   font-size: 2em;
-  margin-bottom: 10px; /* Reduced margin */
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .faq-popular-questions {
-  margin-bottom: 10px; /* Reduced margin */
-  padding: 10px; /* Reduced FAQ section padding */
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .collapsible {
   background-color: #f6eaea;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  padding: 8px; /* Reduced padding */
+  padding: 8px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px; /* Reduced font size */
-  margin-bottom: 3px; /* Reduced margin */
+  font-size: 16px;
+  margin-bottom: 3px;
 }
 
 .content {
-  padding: 0 10px; /* Reduced padding */
+  padding: 0 10px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
@@ -44,13 +45,13 @@
 .faq-categories {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px; /* Reduced gap */
+  gap: 8px;
 }
 
 .category {
   background-color: #3a8b74;
   color: rgb(0, 0, 0);
-  padding: 8px 15px; /* Reduced padding */
+  padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
@@ -58,8 +59,8 @@
 }
 
 .contact-us {
-  margin-top: 20px; /* Reduced margin */
-  padding: 10px; /* Reduced padding */
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .contact-form {
@@ -68,7 +69,7 @@
 }
 
 .contact-form div {
-  margin-bottom: 10px; /* Reduced margin */
+  margin-bottom: 10px;
 }
 
 .contact-form label {
@@ -78,14 +79,14 @@
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px; /* Adjusted padding for text fields */
-  margin-top: 3px; /* Reduced margin */
+  padding: 10px;
+  margin-top: 3px;
   border: 1px solid #ccc;
   border-radius: 10px;
 }
 
 .contact-form button {
-  padding: 8px 12px; /* Reduced padding */
+  padding: 8px 12px;
   background-color: #f08080;
   border: none;
   border-radius: 4px;
