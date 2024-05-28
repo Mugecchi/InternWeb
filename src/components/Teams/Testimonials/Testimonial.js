@@ -123,7 +123,7 @@ export default function Testimonial({ Team = [] }) {
                           variant="subtitle1"
                         >
                           {item.School}
-                          {isMobile ? item.Introduction : null}
+                          <br /> <br /> {isMobile ? item.Introduction : null}
                         </Typography>
                       </Box>
                     </Grid>
