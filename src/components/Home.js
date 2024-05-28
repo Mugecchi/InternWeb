@@ -5,6 +5,7 @@ import overlay from "../images/overlay.png";
 import WAVE from "../images/WAVE.svg";
 import InternData from "./Teams/Testimonials/InternData";
 import Slider from "./InternTeam/Accordion";
+import YoutubePlayer from "./VideoStream/youtube";
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
@@ -102,6 +103,9 @@ const Home = () => {
 
       <div className={classes.secondaryPanel}>
         <InternData />
+      </div>
+      <div className={classes.primaryPanel}>
+        <YoutubePlayer />
       </div>
     </div>
   );
