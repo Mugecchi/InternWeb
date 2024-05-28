@@ -84,7 +84,13 @@ const Faqs = () => {
         <h2>Particular Questions</h2>
         {faqs.map((faq, index) => (
           <Grid container xs={12} spacing={0}>
-            <Grid item key={index} xs={4} style={{ marginTop: "0.5vh" }}>
+            <Grid
+              item
+              key={index}
+              xs={12}
+              lg={4}
+              style={{ marginTop: "0.5vh" }}
+            >
               <Faq
                 question={faq.question}
                 answer={faq.answer}
@@ -99,10 +105,10 @@ const Faqs = () => {
         <h2>Contact Us</h2>
         <form onSubmit={handleSubmit} className="contact-form">
           <Grid container xs={12} spacing={0}>
-            <Grid item xs={1}>
+            <Grid item xs={3} lg={1}>
               <label>Full name</label>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs lg={3}>
               <input
                 type="text"
                 name="fullName"
@@ -114,10 +120,10 @@ const Faqs = () => {
             </Grid>
           </Grid>
           <Grid container xs={12} spacing={0}>
-            <Grid item xs={1}>
+            <Grid item xs={3} lg={1}>
               <label>Subject</label>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs lg={3}>
               <input
                 type="text"
                 name="subject"
@@ -128,10 +134,10 @@ const Faqs = () => {
             </Grid>
           </Grid>
           <Grid container xs={12} spacing={0}>
-            <Grid item xs={1}>
+            <Grid item xs={3} lg={1}>
               <label>Email*</label>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs lg={3}>
               <input
                 type="email"
                 name="email"
@@ -143,10 +149,10 @@ const Faqs = () => {
             </Grid>
           </Grid>
           <Grid container xs={12} spacing={0}>
-            <Grid item xs={1}>
+            <Grid item xs={3} lg={1}>
               <label>Phone</label>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs lg={3}>
               <input
                 type="tel"
                 name="phone"
@@ -157,10 +163,10 @@ const Faqs = () => {
             </Grid>
           </Grid>
           <Grid container xs={12} spacing={0}>
-            <Grid item xs={1}>
+            <Grid item xs={4} lg={1}>
               <label>Message</label>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs lg={3}>
               <textarea
                 name="message"
                 value={formState.message}
