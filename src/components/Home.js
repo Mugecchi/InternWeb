@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   primaryPanel: {
     position: "relative",
     background: "#ffffff",
-    padding: "20vh",
+    padding: "10vh 0vh",
   },
   secondaryPanel: {
     position: "relative",
