@@ -127,35 +127,47 @@ const Faqs = () => {
               />
             </Grid>
           </Grid>
-          <Grid>
-            <label>Email*</label>
-            <input
-              type="email"
-              name="email"
-              value={formState.email}
-              onChange={handleInputChange}
-              placeholder="Enter your email"
-              required
-            />
+          <Grid container xs={12} spacing={0}>
+            <Grid item xs={1}>
+              <label>Email*</label>
+            </Grid>
+            <Grid item xs={3}>
+              <input
+                type="email"
+                name="email"
+                value={formState.email}
+                onChange={handleInputChange}
+                placeholder="Enter your email"
+                required
+              />
+            </Grid>
           </Grid>
-          <Grid>
-            <label>Phone</label>
-            <input
-              type="tel"
-              name="phone"
-              value={formState.phone}
-              onChange={handleInputChange}
-              placeholder="Enter your phone number"
-            />
+          <Grid container xs={12} spacing={0}>
+            <Grid item xs={1}>
+              <label>Phone</label>
+            </Grid>
+            <Grid item xs={3}>
+              <input
+                type="tel"
+                name="phone"
+                value={formState.phone}
+                onChange={handleInputChange}
+                placeholder="Enter your phone number"
+              />
+            </Grid>
           </Grid>
-          <Grid>
-            <label>Message</label>
-            <textarea
-              name="message"
-              value={formState.message}
-              onChange={handleInputChange}
-              placeholder="Type your message here..."
-            ></textarea>
+          <Grid container xs={12} spacing={0}>
+            <Grid item xs={1}>
+              <label>Message</label>
+            </Grid>
+            <Grid item xs={3}>
+              <textarea
+                name="message"
+                value={formState.message}
+                onChange={handleInputChange}
+                placeholder="Type your message here..."
+              ></textarea>
+            </Grid>
           </Grid>
           <button type="submit">Send</button>
         </form>
