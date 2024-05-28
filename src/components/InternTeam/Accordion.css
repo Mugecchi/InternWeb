@@ -57,7 +57,7 @@ body {
   transform: translateY(0) rotateZ(90deg);
   transition: 0.5s cubic-bezier(0.35, 0, 0, 1);
   width: 13em;
-  color: rgba(0, 0, 0, 0.65);
+  color: rgb(255, 255, 255);
   background: rgba(11, 11, 11, 0.306); /* Transparent background */
   line-height: 1.5;
   height: 80px;
@@ -66,57 +66,57 @@ body {
 }
 
 .slider .one {
-  background-image: url(./InternImages/Dev\ Adonis.svg);
+  background-image: url(./InternImages/DEV\ Adonis.png);
 }
 
 .slider .two {
-  background-image: url(./InternImages/Dev\ Benedick.svg);
+  background-image: url(./InternImages/DEV\ Benedick.png);
 }
 
 .slider .three {
-  background-image: url(./InternImages/Dev\ Miggui.svg);
+  background-image: url(./InternImages/DEV\ Miggui.png);
 }
 
 .slider .four {
-  background-image: url(./InternImages/Dev\ Randy.svg);
+  background-image: url(./InternImages/DEV\ Randy.png);
 }
 
 .slider .five {
-  background-image: url(./InternImages/OPS\ Andrea.svg);
+  background-image: url(./InternImages/OPS\ Andrea.png);
 }
 
 .slider .six {
-  background-image: url(./InternImages/OPS\ Angelina.svg);
+  background-image: url(./InternImages/OPS\ Angie.png);
 }
 
 .slider .seven {
-  background-image: url(./InternImages/OPS\ Frenalyn.svg);
+  background-image: url(./InternImages/OPS\ Frenalyn.png);
 }
 
 .slider .eight {
-  background-image: url(./InternImages/OPS\ Joan.svg);
+  background-image: url(./InternImages/OPS\ Joan.png);
 }
 
 .slider .nine {
-  background-image: url(./InternImages/OPS\ Novelyn.svg);
+  background-image: url(./InternImages/OPS\ Novelyn.png);
 }
 
 .slider .ten {
-  background-image: url(./InternImages/OPS\ Patricia.svg);
+  background-image: url(./InternImages/OPS\ Patricia.png);
 }
 
 .slider .eleven {
-  background-image: url(./InternImages/OPS\ Frenan.svg);
+  background-image: url(./InternImages/OPS\ Frenan.png);
 }
 
 .slider .twelve {
-  background-image: url(./InternImages/OPS\ Ryan.svg);
+  background-image: url(./InternImages/OPS\ Ryan.png);
 }
 
 .slider .thirteen {
-  background-image: url(./InternImages/Dev\ Joemar.svg);
+  background-image: url(./InternImages/DEV\ Joemar.png);
 }
 
 .slider .fourteen {
-  background-image: url(./InternImages/OPS\ Isah.svg);
+  background-image: url(./InternImages/TECH\ Isah.png);
 }

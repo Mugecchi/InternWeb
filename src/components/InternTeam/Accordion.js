@@ -6,72 +6,72 @@ const Slider = () => {
     <ul className="slider">
       <li className="one">
         <a href="#">
-          <h1>Adonis</h1>
+          <h1>ADONIS</h1>
         </a>
       </li>
       <li className="two">
         <a href="#">
-          <h1>Benedick</h1>
+          <h1>BENEDICK</h1>
         </a>
       </li>
       <li className="three">
         <a href="#">
-          <h1>Migui</h1>
+          <h1>MIGUI</h1>
         </a>
       </li>
       <li className="four">
         <a href="#">
-          <h1>Randy</h1>
+          <h1>RANDY</h1>
         </a>
       </li>
       <li className="five">
         <a href="#">
-          <h1>Andrea</h1>
+          <h1>ANDREA</h1>
         </a>
       </li>
       <li className="six">
         <a href="#">
-          <h1>Angie</h1>
+          <h1>ANGELINA</h1>
         </a>
       </li>
       <li className="seven">
         <a href="#">
-          <h1>Frenalyn</h1>
+          <h1>FRENALYN</h1>
         </a>
       </li>
       <li className="eight">
         <a href="#">
-          <h1>Joan</h1>
+          <h1>JOAN</h1>
         </a>
       </li>
       <li className="nine">
         <a href="#">
-          <h1>Novelyn</h1>
+          <h1>NOVELYN</h1>
         </a>
       </li>
       <li className="ten">
         <a href="#">
-          <h1>Patricia</h1>
+          <h1>PATRICIA</h1>
         </a>
       </li>
       <li className="eleven">
         <a href="#">
-          <h1>Frenan</h1>\{" "}
+          <h1>FRENAN</h1>\
         </a>
       </li>
       <li className="twelve">
         <a href="#">
-          <h1>Ryan</h1>
+          <h1>RYAN</h1>
         </a>
       </li>
       <li className="thirteen">
         <a href="#">
-          <h1>Joemar</h1>
+          <h1>JOEMAR</h1>
         </a>
       </li>
       <li className="fourteen">
         <a href="#">
-          <h1>Isah</h1>
+          <h1>ISAH</h1>
         </a>
       </li>
     </ul>
