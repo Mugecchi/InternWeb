@@ -45,10 +45,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   carouselItem: {
-    margin: "8vh",
+    margin: "5vh",
   },
   carouselMobItem: {
-    margin: "0vh",
+    margin: "6vh",
   },
 
   blurWrapper: {

@@ -8,25 +8,31 @@ const YoutubePlayer = () => {
   const handleChange = (event) => {
     setVideoId(event.target.value);
   };
+
   const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
       display: "flex",
+      flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
     },
+    player: {
+      marginBottom: theme.spacing(2), // Add some space between player and select
+    },
   }));
+
   const opts = {
-    height: "390vh",
-    width: "800vw",
     playerVars: {
       autoplay: 1,
     },
   };
+
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
-      <YouTube videoId={videoId} opts={opts} />
+      <YouTube videoId={videoId} opts={opts} className={classes.player} />
       <select onChange={handleChange}>
         <option value="4KXI9yYKex0">Adonis</option>
         <option value="MyMmB7vnO9c">Benedick</option>
