@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
   overlayImage: {
     position: "absolute",
     top: 0,
-    left: "-0.1vw",
-    width: "110vw",
+    left: "-2vw",
+    width: "120vw",
     height: "100vh",
     zIndex: -1,
-    opacity: 0.5,
+    opacity: 1,
   },
   textContainer: {
     zIndex: 20,
