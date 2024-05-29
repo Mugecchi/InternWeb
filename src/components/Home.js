@@ -108,9 +108,7 @@ const Home = () => {
       <div className={classes.primaryPanel}>
         <YoutubePlayer />
       </div>
-      <div className={classes.primaryPanel}>
-        <Faqs />
-      </div>
+      <div className={classes.primaryPanel}></div>
     </div>
   );
 };
