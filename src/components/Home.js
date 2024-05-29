@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 20,
     marginTop: "30vh",
     fontFamily: "Poppins",
-    fontSize: 40,
+    fontSize: "10rem",
   },
   WAVE: {
     position: "absolute",
