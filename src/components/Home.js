@@ -65,24 +65,17 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
   const classes = useStyles();
 
-  const isSmallScreen = useMediaQuery("(max-width:600px)");
-  const isMediumScreen = useMediaQuery("(max-width:960px)");
-
-  let fontSize = "3rem";
-  if (isSmallScreen) {
-    fontSize = "1.5rem";
-  } else if (isMediumScreen) {
-    fontSize = "2rem";
-  }
   return (
     <div className={classes.root}>
       <div className={classes.LandingPane}>
         <img alt="Background" src={bg} className={classes.bgImage} />
         <div className={classes.textContainer}>
           <Box fontFamily="Poppins">
-            <Typography align="center" variant="h3" style={{ fontSize }}>
-              <h3>Chart your Career Course:</h3>
-              <h3>Your INTERNSHIP, Your FUTURE</h3>
+            <Typography align="center">
+              <Typography style={{ fontSize: "3vw", fontWeight: 600 }}>
+                Lorem ipsum dolor <br />
+                sit amet lorem ipsum dolor
+              </Typography>
             </Typography>
           </Box>
           <img
@@ -95,7 +88,7 @@ const Home = () => {
       </div>
       <div className={classes.primaryPanel}>
         <Typography align="center">
-          <Box fontFamily={"poppins"} fontSize={"4rem"} fontWeight={800}>
+          <Box fontFamily={"poppins"} fontSize={"10vw"} fontWeight={800}>
             TEAMS
           </Box>
         </Typography>
@@ -108,7 +101,9 @@ const Home = () => {
       <div className={classes.primaryPanel}>
         <YoutubePlayer />
       </div>
-      <div className={classes.primaryPanel}></div>
+      <div className={classes.primaryPanel}>
+        <Faqs />
+      </div>
     </div>
   );
 };

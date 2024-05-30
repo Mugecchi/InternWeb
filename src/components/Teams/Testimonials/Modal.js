@@ -11,6 +11,7 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
+  Container,
 } from "@material-ui/core";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -45,10 +46,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   carouselItem: {
-    margin: "5vh",
+    margin: "5vw",
   },
   carouselMobItem: {
-    margin: "6vh",
+    margin: "10vw",
   },
 
   blurWrapper: {
@@ -123,46 +124,48 @@ const ModalExp = ({ children = {}, Team = [] }) => {
             <div
               key={index}
               className={
-                isMobile ? classes.carouselItem : classes.carouselMobItem
+                isMobile ? classes.carouselMobItem : classes.carouselItem
               }
             >
-              <Paper
-                component={StyledButtonBase}
-                className={classes.PaperCont}
-                elevation={10}
-                onClick={handleOpen(index)}
-                style={{ cursor: "pointer" }}
-              >
-                <Grid
-                  container
-                  spacing={2}
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
+              <Typography align="center">
+                <Paper
+                  component={StyledButtonBase}
+                  className={classes.PaperCont}
+                  elevation={10}
+                  onClick={handleOpen(index)}
+                  style={{ cursor: "pointer" }}
                 >
-                  <Grid item xs={4}>
+                  <Grid
+                    container
+                    spacing={2}
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center"
+                  >
                     <Avatar
                       src={item.src}
                       style={{
                         height: isMobile ? "30vh" : "25vh",
                         width: isMobile ? "30vh" : "25vh",
-                        left: isMobile ? "-11vh" : null,
                       }}
                     />
+
+                    {!isMobile && (
+                      <Grid item xs>
+                        <Box style={{ marginLeft: "2vh" }} textAlign={"left"}>
+                          <Typography variant="h5">{item.CardTitle}</Typography>
+                          <Typography variant="h5">
+                            {item.CardContent}
+                          </Typography>
+                          <Typography align="right" variant={"h4"}>
+                            - {item.NickName} (2024)
+                          </Typography>
+                        </Box>
+                      </Grid>
+                    )}
                   </Grid>
-                  {!isMobile && (
-                    <Grid item xs>
-                      <Box style={{ marginLeft: "2vh" }} textAlign={"left"}>
-                        <Typography variant="h5">{item.CardTitle}</Typography>
-                        <Typography variant="h5">{item.CardContent}</Typography>
-                        <Typography align="right" variant={"h4"}>
-                          - {item.NickName} (2024)
-                        </Typography>
-                      </Box>
-                    </Grid>
-                  )}
-                </Grid>
-              </Paper>
+                </Paper>
+              </Typography>
               <Modal open={openModalIndex === index} onClose={handleClose}>
                 <Grid
                   container

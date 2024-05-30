@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import "./FAQS.css";
-import { Grid } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 const Faq = ({ question, answer, isOpen, onClick }) => {
   return (
-    <div className="faq-container">
-      <button className="collapsible" onClick={onClick}>
-        {question}
-      </button>
-      <div className="content" style={{ display: isOpen ? "block" : "none" }}>
-        <ul className="answer">
+    <div>
+      <button onClick={onClick}>{question}</button>
+      <div style={{ display: isOpen ? "block" : "none" }}>
+        <ul>
           {answer.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
@@ -78,107 +75,81 @@ const Faqs = () => {
   };
 
   return (
-    <div className="faq-page">
-      <h1 className="faq-title">F.A.Q.</h1>
-      <div className="faq-popular-questions">
-        <h2>Particular Questions</h2>
-        {faqs.map((faq, index) => (
-          <Grid container xs={12} spacing={0}>
-            <Grid
-              item
-              key={index}
-              xs={12}
-              lg={4}
-              style={{ marginTop: "0.5vh" }}
-            >
-              <Faq
-                question={faq.question}
-                answer={faq.answer}
-                isOpen={openIndex === index}
-                onClick={() => handleToggle(index)}
-              />
-            </Grid>
-          </Grid>
-        ))}
-      </div>
-      <div className="contact-us">
-        <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit} className="contact-form">
-          <Grid container xs={12} spacing={0}>
-            <Grid item xs={3} lg={1}>
-              <label>Full name</label>
-            </Grid>
-            <Grid item xs lg={3}>
-              <input
-                type="text"
-                name="fullName"
-                value={formState.fullName}
-                onChange={handleInputChange}
-                placeholder="Enter your full name"
-                required
-              />
-            </Grid>
-          </Grid>
-          <Grid container xs={12} spacing={0}>
-            <Grid item xs={3} lg={1}>
-              <label>Subject</label>
-            </Grid>
-            <Grid item xs lg={3}>
-              <input
-                type="text"
-                name="subject"
-                value={formState.subject}
-                onChange={handleInputChange}
-                placeholder="Enter your subject"
-              />
-            </Grid>
-          </Grid>
-          <Grid container xs={12} spacing={0}>
-            <Grid item xs={3} lg={1}>
-              <label>Email*</label>
-            </Grid>
-            <Grid item xs lg={3}>
-              <input
-                type="email"
-                name="email"
-                value={formState.email}
-                onChange={handleInputChange}
-                placeholder="Enter your email"
-                required
-              />
-            </Grid>
-          </Grid>
-          <Grid container xs={12} spacing={0}>
-            <Grid item xs={3} lg={1}>
-              <label>Phone</label>
-            </Grid>
-            <Grid item xs lg={3}>
-              <input
-                type="tel"
-                name="phone"
-                value={formState.phone}
-                onChange={handleInputChange}
-                placeholder="Enter your phone number"
-              />
-            </Grid>
-          </Grid>
-          <Grid container xs={12} spacing={0}>
-            <Grid item xs={4} lg={1}>
-              <label>Message</label>
-            </Grid>
-            <Grid item xs lg={3}>
-              <textarea
-                name="message"
-                value={formState.message}
-                onChange={handleInputChange}
-                placeholder="Type your message here..."
-              ></textarea>
-            </Grid>
-          </Grid>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </div>
+    <Container maxWidth="md">
+      <Typography
+        component="div"
+        style={{
+          backgroundColor: "#ff750489",
+          borderRadius: "50px",
+          padding: "3vw",
+        }}
+      >
+        <Typography align="center" style={{ fontWeight: 700, fontSize: "3em" }}>
+          F.A.Q.
+        </Typography>
+        <Typography>
+          <Typography variant="h2">Particular Questions</Typography>
+          {faqs.map((faq, index) => (
+            <Faq
+              question={faq.question}
+              answer={faq.answer}
+              isOpen={openIndex === index}
+              onClick={() => handleToggle(index)}
+            />
+          ))}
+        </Typography>
+        <Typography>
+          <Typography variant="h1">Contact Us</Typography>
+          <form onSubmit={handleSubmit}>
+            <label>Full name</label>
+            <input
+              type="text"
+              name="fullName"
+              value={formState.fullName}
+              onChange={handleInputChange}
+              placeholder="Enter your full name"
+              required
+            />
+
+            <label>Subject</label>
+            <input
+              type="text"
+              name="subject"
+              value={formState.subject}
+              onChange={handleInputChange}
+              placeholder="Enter your subject"
+            />
+            <label>Email*</label>
+            <input
+              type="email"
+              name="email"
+              value={formState.email}
+              onChange={handleInputChange}
+              placeholder="Enter your email"
+              required
+            />
+
+            <label>Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              value={formState.phone}
+              onChange={handleInputChange}
+              placeholder="Enter your phone number"
+            />
+
+            <label>Message</label>
+            <textarea
+              name="message"
+              value={formState.message}
+              onChange={handleInputChange}
+              placeholder="Type your message here..."
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </Typography>
+      </Typography>
+    </Container>
   );
 };
 
