@@ -78,16 +78,51 @@ export default function InternData() {
       LastName: "Yamat",
       FirstName: "Benedick",
       NickName: "Ben",
-      Quote: "Tara kape",
+      Quote: (
+        <h3>
+          "Life is like a bicycle in able to maintain your balance, you must
+          keep moving."
+        </h3>
+      ),
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
-      Introduction: "Hi I am BayMax and I like warm hugs",
-      Testimony: "Late pero papasok parin",
-      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
+      Introduction: (
+        <h2>
+          Greetings, I'm Ben, I'm here to share my journey during my internship
+          at RadzTech.
+        </h2>
+      ),
+      Testimony:
+        "My RadzTech internship was a dynamic learning experience where I tackled real-world challenges, bonded with mentors and peers, and left with enhanced skills and confidence for my tech career ahead.",
+      Body: (
+        <p>
+          &nbsp; &nbsp; &nbsp; &nbsp;During my time at RadzTech Business
+          Solutions as a developer intern, I felt like I was on a thrilling
+          rollercoaster of learning and growth. From the moment I stepped
+          through the door, I was welcomed into a vibrant community of tech
+          enthusiasts where curiosity was celebrated, mistakes were learning
+          opportunities, and teamwork was key.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;Each day brought new challenges and
+          triumphs as I dove headfirst into projects, often feeling the rush of
+          excitement when code finally clicked into place after hours of
+          debugging. But what truly made my internship special were the
+          people—the mentors who patiently guided me through tough coding
+          puzzles, the colleagues who became friends, sharing in both the
+          victories and the occasional setbacks.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;Looking back, I realize that my time at
+          RadzTech wasn't just about learning technical skills; it was about
+          discovering my own strengths, building confidence in my abilities, and
+          finding my place in the ever-evolving world of software development.
+          It's an experience I'll always cherish as I continue on my journey in
+          this fascinating field.
+        </p>
+      ),
       src: Ben,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "",
+      CardContent:
+        "An internship is not just about gaining skills; it's about embracing challenges, diving into the code, and discovering the true artistry of development",
     },
     {
       LastName: "Rivera",
@@ -439,9 +474,35 @@ export default function InternData() {
       Quote: <h3>Tara kape</h3>,
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
-      Introduction: <h2>Hi I am BayMax and I like warm hugs</h2>,
-      Testimony: "Late pero papasok parin",
-      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
+      Introduction: (
+        <h2>Hi, I’m Novelyn. I hope you find time reading this!</h2>
+      ),
+      Testimony: (
+        <span style={{ fontWeight: 800 }}>
+          Reflecting on my internship at Radztech, one word consistently comes
+          to mind: transformation
+        </span>
+      ),
+      Body: (
+        <p>
+          Personal and professional growth were my key objectives for the
+          internship program, and Radztech provided the perfect environment to
+          achieve them
+          <br /> <br />
+          Working with the Radztech team has been an incredible journey. In just
+          three short months, I've gained a lot of lessons, knowledge, and
+          valuable insights. I can say that I've experienced tremendous growth.
+          Radztech embodies the motto, 'Go Beyond,' by consistently pushing me
+          to exceed my own expectations and reach my full potential.
+          <br /> <br />
+          As my internship journey at Radztech concludes, a simple 'thank you'
+          feels inadequate to express my profound gratitude. I am incredibly
+          grateful to everyone at Radztech, especially the individuals who
+          generously guided and mentored me throughout my experience. I will be
+          forever grateful to you, Radztech.
+          <br /> <br />
+        </p>
+      ),
       src: Novelyn,
       CardTitle:
         "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
