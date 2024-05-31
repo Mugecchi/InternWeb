@@ -28,14 +28,20 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh", // Set the height to occupy the full viewport height
     width: "100%",
     overflow: "hidden",
+    "@media (max-width: 600px)": {
+      height: "50vh",
+    },
   },
   bgImage: {
     position: "absolute",
     top: 0,
-    left: 0,
-    width: "100%",
+    left: "-13vw",
+    width: "130%",
     height: "100%",
     zIndex: -1,
+    "@media (max-width: 600px)": {
+      height: "50vh",
+    },
   },
   overlayImage: {
     position: "absolute",
@@ -47,7 +53,9 @@ const useStyles = makeStyles((theme) => ({
     opacity: 1,
   },
   textContainer: {
-    paddingTop: "10vh",
+    paddingTop: "20vh",
+    paddingLeft: "2vw",
+    paddingRight: "2vw",
   },
 
   WAVE: {
@@ -68,25 +76,25 @@ const useStyles = makeStyles((theme) => ({
     background: "#011c25",
     padding: "10vh 0vh",
   },
-  searchBar: {
-    background: "white",
-    maxWidth: "30vw",
-    maxHeight: "7vh",
-    fontSize: "0.5vw",
-    width: "60vw",
-    height: "10vh",
-    borderRadius: theme.spacing(2, 0, 0, 2),
-    "& .MuiOutlinedInput-root": {
-      borderRadius: theme.spacing(2, 0, 0, 2),
-      fontSize: "0.5vw",
-      height: "100%",
-      "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-        borderWidth: "2px",
-        fontSize: "0.5vw",
-        borderRadius: theme.spacing(2, 0, 0, 2), // Change border radius when focused
-      },
-    },
-  },
+  // searchBar: {
+  //   background: "white",
+  //   maxWidth: "30vw",
+  //   maxHeight: "7vh",
+  //   fontSize: "0.5vw",
+  //   width: "60vw",
+  //   height: "10vh",
+  //   borderRadius: theme.spacing(2, 0, 0, 2),
+  //   "& .MuiOutlinedInput-root": {
+  //     borderRadius: theme.spacing(2, 0, 0, 2),
+  //     fontSize: "0.5vw",
+  //     height: "100%",
+  //     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+  //       borderWidth: "2px",
+  //       fontSize: "0.5vw",
+  //       borderRadius: theme.spacing(2, 0, 0, 2), // Change border radius when focused
+  //     },
+  //   },
+  // },
   inputLabel: {
     color: "#bcbcbc",
     fontSize: "0.5vw",
@@ -103,6 +111,19 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Home = () => {
+  const OutlineText = ({ children, fontSize, fontWeight }) => (
+    <Typography
+      style={{
+        fontSize: fontSize,
+        fontWeight: fontWeight,
+        lineHeight: 1,
+        color: "transparent",
+        WebkitTextStroke: `1px white`, // Outline color and width
+      }}
+    >
+      {children}
+    </Typography>
+  );
   const classes = useStyles();
 
   return (
@@ -110,34 +131,18 @@ const Home = () => {
       <div className={classes.LandingPane}>
         <img alt="Background" src={bg} className={classes.bgImage} />
         <div className={classes.textContainer}>
-          <Box fontFamily="Poppins">
+          <Box fontFamily="">
             <Typography align="center">
-              <Typography style={{ fontSize: "3vw", fontWeight: 600 }}>
-                Lorem ipsum dolor <br />
-                sit amet lorem ipsum dolor
-              </Typography>
-              <Typography
-                align="center"
-                style={{ fontSize: "2vw", fontWeight: 300 }}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                <br /> sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-                <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </Typography>
-              <TextField
-                variant="outlined"
-                size="small"
-                label="example@sample.com"
-                className={classes.searchBar}
-              ></TextField>
-              <Button
-                color="primary"
-                variant="contained"
-                className={classes.buttonMod}
-              >
-                Submit
-              </Button>
+              <OutlineText fontSize="4vw" fontWeight={600}>
+                CHART YOUR CAREER COURSE:
+                <br /> YOUR INTERNSHIP, YOUR FUTURE
+              </OutlineText>
+              <br />
+              <OutlineText fontSize="3vw" fontWeight={300}>
+                Learning. Growing. Making an impact:
+                <br /> Explore the journeys of those who dared to bridge
+                <br /> the gap between theory and reality.
+              </OutlineText>
             </Typography>
           </Box>
           <img
