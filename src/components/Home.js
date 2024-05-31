@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
   bgImage: {
     position: "absolute",
     top: 0,
-    left: "-20vw",
-    width: "140%",
-    height: "auto",
+    left: "-13vw",
+    width: "130%",
+    height: "100%",
     zIndex: -1,
     "@media (max-width: 600px)": {
       height: "50vh",
@@ -111,13 +111,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Home = () => {
-  const OutlineText = ({ children, fontSize, fontWeight }) => (
+  const OutlineText = ({ children, fontSize, fontWeight, color }) => (
     <Typography
       style={{
         fontSize: fontSize,
         fontWeight: fontWeight,
         lineHeight: 1,
-        color: "white",
+        color: "transparent",
+        WebkitTextStroke: color || `1px white`, // Outline color and width
       }}
     >
       {children}
@@ -138,7 +139,8 @@ const Home = () => {
               </OutlineText>
               <br />
               <OutlineText fontSize="3vw" fontWeight={300}>
-                Learning. Growing. Making an impact:
+                <span> Learning.</span> <span>Growing.</span>{" "}
+                <span>Making an impact:</span>
                 <br /> Explore the journeys of those who dared to bridge
                 <br /> the gap between theory and reality.
               </OutlineText>
@@ -155,7 +157,7 @@ const Home = () => {
       <div className={classes.primaryPanel}>
         <Typography align="center">
           <Box fontFamily={"poppins"} fontSize={"5vw"} fontWeight={800}>
-            TEAMS
+            BATCH 6
           </Box>
         </Typography>
         <Slider />
