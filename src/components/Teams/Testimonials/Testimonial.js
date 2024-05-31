@@ -69,7 +69,9 @@ export default function Testimonial({ Team = [], handleClose }) {
           <div className={classes.root} key={index}>
             <Paper className={classes.paper} elevation={10}>
               <Typography align="right">
-                <IconButton onClick={handleClose}>X</IconButton>
+                <IconButton onClick={handleClose}>
+                  <i class="fa fa-times-circle fa-fade" aria-hidden="true"></i>
+                </IconButton>
               </Typography>
               <Grid container spacing={2}>
                 <Grid
