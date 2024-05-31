@@ -51,7 +51,6 @@ const useStyles = makeStyles((theme) => ({
   carouselMobItem: {
     margin: "10vw",
   },
-
   blurWrapper: {
     position: "relative",
     overflow: "hidden",
@@ -153,7 +152,6 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                         width: isMobile ? "30vh" : "25vh",
                       }}
                     />
-
                     {!isMobile && (
                       <Grid item xs>
                         <Box style={{ marginLeft: "2vh" }} textAlign={"left"}>
@@ -166,10 +164,14 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                           <Typography align="right" variant={"h4"}>
                             - {item.NickName} (2024)
                           </Typography>
-                          <Typography align="right" variant={"h4"}>
-                            ~R34d M0r3
-                          </Typography>
                         </Box>
+                        <Typography
+                          align="right"
+                          variant={"h5"}
+                          style={{ color: "#ff7704" }}
+                        >
+                          ~R34d M0r3
+                        </Typography>
                       </Grid>
                     )}
                   </Grid>
@@ -186,7 +188,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                     top: "5vh",
                   }}
                 >
-                  <Testimonial Team={[item]} />
+                  <Testimonial Team={[item]} handleClose={handleClose} />
                 </Grid>
               </Modal>
             </div>
