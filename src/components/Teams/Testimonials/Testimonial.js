@@ -3,12 +3,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import { Avatar, Box, useMediaQuery, useTheme } from "@material-ui/core";
-// const QouteTypo = withStyles({
-//   root: {
-//     color: "#ff7704",
-//   },
-// })(Typography);
+import {
+  Avatar,
+  Box,
+  useMediaQuery,
+  useTheme,
+  IconButton,
+} from "@material-ui/core";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -29,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
       height: "0",
     },
   },
-
   image: {
     width: "25vh",
     height: "25vh",
@@ -47,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Testimonial({ Team = [] }) {
+export default function Testimonial({ Team = [], handleClose }) {
   const classes = useStyles();
   const isSmallScreen = useMediaQuery("(max-width:600px)");
   const isMediumScreen = useMediaQuery("(max-width:960px)");
@@ -65,8 +66,11 @@ export default function Testimonial({ Team = [] }) {
     <div className={classes.root}>
       {Team.map((item, index) => {
         return (
-          <div className={classes.root}>
+          <div className={classes.root} key={index}>
             <Paper className={classes.paper} elevation={10}>
+              <Typography align="right">
+                <IconButton onClick={handleClose}>X</IconButton>
+              </Typography>
               <Grid container spacing={2}>
                 <Grid
                   item
@@ -141,7 +145,9 @@ export default function Testimonial({ Team = [] }) {
                 </Grid>
                 <Grid item>
                   {isMobile ? null : (
-                    <i class="fa-solid fa-quote-right fa-10x fa-fade" />
+                    <div>
+                      <i className="fa-solid fa-quote-right fa-10x fa-fade" />
+                    </div>
                   )}
                 </Grid>
                 <Grid item xs={12} style={{ margin: "10px 30px 0 30px" }}>
