@@ -87,6 +87,7 @@ export default function Testimonial({ Team = [], handleClose }) {
                       className={classes.img}
                       alt="complex"
                       src={item.src}
+                      style={{ border: "3px solid black" }}
                     />
                   </div>
                 </Grid>

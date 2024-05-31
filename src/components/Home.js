@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
   bgImage: {
     position: "absolute",
     top: 0,
-    left: "-13vw",
-    width: "130%",
-    height: "100%",
+    left: "-20vw",
+    width: "140%",
+    height: "auto",
     zIndex: -1,
     "@media (max-width: 600px)": {
       height: "50vh",
@@ -117,8 +117,7 @@ const Home = () => {
         fontSize: fontSize,
         fontWeight: fontWeight,
         lineHeight: 1,
-        color: "transparent",
-        WebkitTextStroke: `1px white`, // Outline color and width
+        color: "white",
       }}
     >
       {children}
