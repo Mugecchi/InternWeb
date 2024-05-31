@@ -1,18 +1,19 @@
 import React from "react";
 import Testimonial from "./Testimonial";
-import Randy from "./Images/randy.jpg";
-import Migs from "./Images/migs.jpg";
-import Adonis from "./Images/adonis.jpg";
-import Ben from "./Images/benedick.jpg";
-import Angie from "./Images/angelina.jpg";
-import Ryan from "./Images/ryan.jpg";
-import Joan from "./Images/joan.jpg";
-import Joemar from "./Images/joemar.jpg";
-import Andeng from "./Images/andrea.jpg";
-import Novelyn from "./Images/novelyn.jpg";
-import Frenan from "./Images/frenan.jpg";
-import Frenalyn from "./Images/frenalyn.jpg";
-import Pat from "./Images/patricia.jpg";
+import Randy from "./Images/RAN.JPG";
+import Migs from "./Images/MIGS.JPG";
+import Adonis from "./Images/ADO.JPG";
+import Ben from "./Images/BEN.JPG";
+import Angie from "./Images/ANGIE.JPG";
+import Ryan from "./Images/RY.JPG";
+import Joan from "./Images/JOAN.JPG";
+import Joemar from "./Images/JOMS.JPG";
+import Andeng from "./Images/ANDENG.JPG";
+import Novelyn from "./Images/NOVE.JPG";
+import Frenan from "./Images/FRENAN.JPG";
+import Frenalyn from "./Images/FRENALYN.JPG";
+import Pat from "./Images/PAT.JPG";
+import Isah from "./Images/ISAH.JPG";
 import ModalExp from "./Modal";
 export default function InternData() {
   const data = [
@@ -28,14 +29,50 @@ export default function InternData() {
       ),
       Course: "BS Computer Science ",
       School: "Isabela State University - Echague Campus",
-      Introduction: <h2>Hi I'm i ano ba ilalagay ko dito</h2>,
-      Testimony: "HAHAHA DIKO PA ALAM ILALAGAY ",
-      Body: "As an intern at RBS was an absolute pleasure. Throughout this OJT, I demonstrated exceptional dedication, a strong work ethic, and a keen willingness to learn. I quickly adapted to our team and contributed significantly to several key projects. Their attention to detail and proactive approach were truly impressive. I am confident that i will excel in any future endeavors and would highly recommend them for any role they pursue.",
+      Introduction: <h2>Hi I'm Adonis, you can call me ado</h2>,
+      Testimony:
+        "My name is Adonis A. Maranan, and I am currently a Computer Science Student, student at Isabela State, University. I'm currently has on my On-the-Job Training at Radztech, where I need to spent 486 hours working as a Developer in the dev team.",
+      Body: (
+        <p>
+          &nbsp; &nbsp; &nbsp; &nbsp;From the moment I started my OJT at
+          Radztech, I was welcomed with open arms and provided with the
+          resources and support needed to thrive. Initially, I was eager to
+          apply the theoretical knowledge I had gained in school, but my
+          experience here exceeded my expectations in every way.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;During my time at Radztech, I gained
+          valuable hands-on experience in being a help desk and a developer. One
+          of the most significant projects I worked on was Search Bar, Org
+          Chart, Flowchart, which not only challenged me but also allowed me to
+          contribute meaningfully to the team.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;The mentorship and guidance I received from
+          my supervisor sir Celso and Renen, and the entire team were
+          invaluable. They were always available to answer my questions, provide
+          feedback, and encourage me to take on new challenges. This supportive
+          environment helped me build confidence and develop my professional
+          skills.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;My OJT experience has profoundly impacted
+          my career goals. It has solidified my interest in Software Developing
+          and inspired me to pursue further opportunities in this area. I am now
+          more confident in my abilities and excited about my future career
+          path.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;I am incredibly grateful to Radztech for
+          providing me with such a rewarding and enriching experience. I would
+          highly recommend this organization to any student seeking a
+          comprehensive and impactful OJT opportunity.
+          <br /> <br />
+          &nbsp; &nbsp; &nbsp; &nbsp;Thank you once again to everyone at
+          Radztech for making my OJT experience unforgettable.
+          <br />
+        </p>
+      ),
       src: Adonis,
-      CardTitle:
-        "Mama mo blue -Ado 2024: Bumili ka ng notebook mo para dika mag loading sa instructions samahan monarin ng ballpen",
+      CardTitle: "",
       CardContent:
-        "Hi! I'm Adonis wala pala ako nickname kaya Ado nalang 🙂, I'm always listening to the instructions kala mo gets kono? loading parin utak kodon, hindi lang po ako programmer meron rin po ako mini zoo sa bahay",
+        "My OJT experience has profoundly impacted my career goals. It has solidified my interest in Software Developing and inspired me to pursue further opportunities in this area.",
     },
     {
       LastName: "Yamat",
@@ -627,7 +664,7 @@ export default function InternData() {
           <br /> <br />
         </p>
       ),
-      src: Novelyn,
+      src: Isah,
       CardTitle: "Pareng Aysa ",
       CardContent:
         " I am filled with certainty that beyond that lies A VAST DIAGRAM OF OPPORTUNITIES THAT AWAITS, EACH ONE WAITING TO BE EXPLORED AND SEIZED.",
