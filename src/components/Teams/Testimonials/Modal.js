@@ -166,13 +166,15 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                             - {item.NickName} (2024)
                           </Typography>
                         </Box>
-                        <Typography
-                          align="right"
-                          variant={"h5"}
-                          style={{ color: "#ff7704" }}
-                        >
-                          ~R34d M0r3
-                        </Typography>
+                        <Grid>
+                          <Typography
+                            align="center"
+                            variant={"h5"}
+                            style={{ color: "#ff7704", paddingTop: "3vh" }}
+                          >
+                            Read more......
+                          </Typography>
+                        </Grid>
                       </Grid>
                     )}
                   </Grid>

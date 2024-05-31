@@ -376,7 +376,9 @@ export default function InternData() {
       Quote: "",
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
-      Introduction: <h2>Hi! I am Frenalyn, good to see you!</h2>,
+      Introduction: (
+        <h2>Hi! I am Frenalyn, join me in my journey at Radztech!</h2>
+      ),
       Testimony:
         "My internship at Radztech Business Solutions was an eye-opening experience. A little back story, i was a little afraid of joining the agency especially when we were told about their selection process. I was thinking of not going and just finding another agency. But then I still tried to attend the recruitment thinking I wouldn't  make it. But thankfully I did try as  I was one of the students who were selected",
       Body: (
@@ -394,10 +396,14 @@ export default function InternData() {
           comfort zone in the best way possible.
           <br /> <br />
           &nbsp; &nbsp; &nbsp; &nbsp;My internship at Radztech fully prepared me
-          for the demands and dynamics of the corporate world. I entered with so
-          much worries, but I left with a wealth of knowledge, sharpened skills,
-          and the confidence to thrive in any professional setting. And I am
-          beyond grateful with Radztech for the experience I'll never forget."
+          for the demands and dynamics of the corporate world.{" "}
+          <span style={{ fontWeight: 800 }}>
+            I entered with so much worries, but I left with a wealth of
+            knowledge, sharpened skills, and the confidence to thrive in any
+            professional setting.
+          </span>{" "}
+          And I am beyond grateful with Radztech for the experience I'll never
+          forget."
           <br /> <br />
         </p>
       ),
@@ -409,7 +415,7 @@ export default function InternData() {
     {
       LastName: "Batara",
       FirstName: "Joan",
-      NickName: "Guo",
+      NickName: "JO",
       Quote: (
         <h3>
           "You’ll never know what’s ahead of you when you limit yourself. Have
@@ -471,7 +477,7 @@ export default function InternData() {
       LastName: "Sejalvo",
       FirstName: "Novelyn",
       NickName: "Novs",
-      Quote: <h3>Tara kape</h3>,
+      Quote: <h3>"Go Beyond Your Limits"</h3>,
       Course: "BS Management Accounting",
       School: "Isabela State University - Cauayan Campus",
       Introduction: (
@@ -480,33 +486,38 @@ export default function InternData() {
       Testimony: (
         <span style={{ fontWeight: 800 }}>
           Reflecting on my internship at Radztech, one word consistently comes
-          to mind: transformation
+          to mind: TRANSFORMATION
         </span>
       ),
       Body: (
         <p>
-          Personal and professional growth were my key objectives for the
-          internship program, and Radztech provided the perfect environment to
-          achieve them
+          &nbsp; &nbsp; &nbsp; &nbsp;Personal and professional growth were my
+          key objectives for the internship program, and Radztech provided the
+          perfect environment to achieve them.
           <br /> <br />
-          Working with the Radztech team has been an incredible journey. In just
-          three short months, I've gained a lot of lessons, knowledge, and
-          valuable insights. I can say that I've experienced tremendous growth.
-          Radztech embodies the motto, 'Go Beyond,' by consistently pushing me
-          to exceed my own expectations and reach my full potential.
+          &nbsp; &nbsp; &nbsp; &nbsp;Working with the Radztech team has been an
+          incredible journey. In just three short months, I've gained a lot of
+          lessons, knowledge, and valuable insights. I can say that I've
+          experienced tremendous growth. Radztech embodies the motto,{" "}
+          <span style={{ fontWeight: 800 }}>'Go Beyond</span>,' by consistently
+          pushing me to exceed my own expectations and reach my full potential.
           <br /> <br />
-          As my internship journey at Radztech concludes, a simple 'thank you'
-          feels inadequate to express my profound gratitude. I am incredibly
-          grateful to everyone at Radztech, especially the individuals who
-          generously guided and mentored me throughout my experience. I will be
-          forever grateful to you, Radztech.
+          &nbsp; &nbsp; &nbsp; &nbsp;As my internship journey at Radztech
+          concludes, a simple 'thank you' feels inadequate to express my
+          profound gratitude. I am incredibly grateful to everyone at Radztech,
+          especially the individuals who generously guided and mentored me
+          throughout my experience. I will be forever grateful to you, Radztech.
           <br /> <br />
         </p>
       ),
       src: Novelyn,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "",
+      CardContent: (
+        <p>
+          "Reflecting on my internship at Radztech, one word consistently comes
+          to mind: TRANSFORMATION"
+        </p>
+      ),
     },
     {
       LastName: "Ramel",
@@ -593,9 +604,13 @@ export default function InternData() {
         </p>
       ),
       src: Frenan,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "",
+      CardContent: (
+        <p>
+          I manifested to be part of the team. Posted on X (Twitter) "Radztech
+          cutieee" Lo and behold, Radztech accepted me.
+        </p>
+      ),
     },
     {
       LastName: "Respicio",
@@ -648,9 +663,16 @@ export default function InternData() {
         </p>
       ),
       src: Ryan,
-      CardTitle:
-        "gusto niyong i highlight, pretty much whatever na gusto mong sabihin with emphasis. pwede rin hello lang",
-      CardContent: "Sayings, Greetings or introduction para sa card",
+      CardTitle: "",
+      CardContent: (
+        <p>
+          But I’m wrong, they made my{" "}
+          <span style={{ fontWeight: 800 }}>
+            UNCERTAINTIES into OPPORTUNITIES
+          </span>{" "}
+          helping me prepare for the real world of a corporate life.
+        </p>
+      ),
     },
     {
       LastName: "Palting",
@@ -680,7 +702,7 @@ export default function InternData() {
         </p>
       ),
       src: Joemar,
-      CardTitle: "Boss Joema",
+      CardTitle: "",
       CardContent: (
         <p>
           "If you're ready to challenge yourself, push your limits, and unlock
@@ -726,7 +748,7 @@ export default function InternData() {
         </p>
       ),
       src: Isah,
-      CardTitle: "Pareng Aysa ",
+      CardTitle: "",
       CardContent:
         " I am filled with certainty that beyond that lies A VAST DIAGRAM OF OPPORTUNITIES THAT AWAITS, EACH ONE WAITING TO BE EXPLORED AND SEIZED.",
     },

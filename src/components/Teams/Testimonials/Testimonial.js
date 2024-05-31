@@ -84,6 +84,7 @@ export default function Testimonial({ Team = [], handleClose }) {
                 >
                   <div className={classes.image}>
                     <Avatar
+                      outlineStyle="inset"
                       className={classes.img}
                       alt="complex"
                       src={item.src}
