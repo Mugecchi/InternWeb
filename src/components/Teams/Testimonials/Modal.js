@@ -29,10 +29,10 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
   },
   PaperCont: {
-    padding: "2vh",
+    padding: "2vw",
     position: "relative",
     overflow: "hidden",
-    width: "80vh",
+    width: "40vw",
     height: "40vh",
     boxShadow: 24,
     borderRadius: "50px",
@@ -81,6 +81,10 @@ const useStyles = makeStyles((theme) => ({
   blurWrapperNoBlur: {
     position: "relative",
     overflow: "hidden",
+  },
+  CardTextHeader: {
+    fontSize: "1vw",
+    fontWeight: 600,
   },
 }));
 
@@ -153,7 +157,9 @@ const ModalExp = ({ children = {}, Team = [] }) => {
                     {!isMobile && (
                       <Grid item xs>
                         <Box style={{ marginLeft: "2vh" }} textAlign={"left"}>
-                          <Typography variant="h5">{item.CardTitle}</Typography>
+                          <Typography className={classes.CardTextHeader}>
+                            {item.CardTitle}
+                          </Typography>
                           <Typography variant="h5">
                             {item.CardContent}
                           </Typography>

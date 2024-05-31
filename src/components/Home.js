@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Typography, makeStyles, useMediaQuery } from "@material-ui/core";
+import {
+  Box,
+  Button,
+  Container,
+  TextField,
+  Typography,
+  makeStyles,
+  useMediaQuery,
+} from "@material-ui/core";
 import bg from "../images/bg 2.png";
 import overlay from "../images/overlay.png";
 import WAVE from "../images/WAVE.svg";
@@ -7,6 +15,8 @@ import InternData from "./Teams/Testimonials/InternData";
 import Slider from "./InternTeam/Accordion";
 import YoutubePlayer from "./VideoStream/youtube";
 import Faqs from "./Faqs";
+import ContactUs from "./ContactUs";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
@@ -37,11 +47,9 @@ const useStyles = makeStyles((theme) => ({
     opacity: 1,
   },
   textContainer: {
-    zIndex: 20,
-    marginTop: "30vh",
-    fontFamily: "Poppins",
-    fontSize: "10rem",
+    paddingTop: "10vh",
   },
+
   WAVE: {
     position: "absolute",
     bottom: "-50vh",
@@ -60,6 +68,38 @@ const useStyles = makeStyles((theme) => ({
     background: "#011c25",
     padding: "10vh 0vh",
   },
+  searchBar: {
+    background: "white",
+    maxWidth: "30vw",
+    maxHeight: "7vh",
+    fontSize: "0.5vw",
+    width: "60vw",
+    height: "10vh",
+    borderRadius: theme.spacing(2, 0, 0, 2),
+    "& .MuiOutlinedInput-root": {
+      borderRadius: theme.spacing(2, 0, 0, 2),
+      fontSize: "0.5vw",
+      height: "100%",
+      "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+        borderWidth: "2px",
+        fontSize: "0.5vw",
+        borderRadius: theme.spacing(2, 0, 0, 2), // Change border radius when focused
+      },
+    },
+  },
+  inputLabel: {
+    color: "#bcbcbc",
+    fontSize: "0.5vw",
+    fontWeight: "bold",
+    "&.Mui-focused": {
+      fontSize: "0.5vw",
+      fontWeight: "bold",
+    },
+  },
+  buttonMod: {
+    borderRadius: theme.spacing(0, 1, 1, 0),
+    height: "7.2vh",
+  },
 }));
 
 const Home = () => {
@@ -76,6 +116,28 @@ const Home = () => {
                 Lorem ipsum dolor <br />
                 sit amet lorem ipsum dolor
               </Typography>
+              <Typography
+                align="center"
+                style={{ fontSize: "2vw", fontWeight: 300 }}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <br /> sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+                <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Typography>
+              <TextField
+                variant="outlined"
+                size="small"
+                label="example@sample.com"
+                className={classes.searchBar}
+              ></TextField>
+              <Button
+                color="primary"
+                variant="contained"
+                className={classes.buttonMod}
+              >
+                Submit
+              </Button>
             </Typography>
           </Box>
           <img
@@ -88,7 +150,7 @@ const Home = () => {
       </div>
       <div className={classes.primaryPanel}>
         <Typography align="center">
-          <Box fontFamily={"poppins"} fontSize={"10vw"} fontWeight={800}>
+          <Box fontFamily={"poppins"} fontSize={"5vw"} fontWeight={800}>
             TEAMS
           </Box>
         </Typography>
@@ -103,6 +165,9 @@ const Home = () => {
       </div>
       <div className={classes.primaryPanel}>
         <Faqs />
+      </div>
+      <div className={classes.primaryPanel}>
+        <ContactUs />
       </div>
     </div>
   );

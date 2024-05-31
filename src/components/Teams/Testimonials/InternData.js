@@ -117,7 +117,20 @@ export default function InternData() {
       ),
       src: Migs,
       NickName: "Migz",
-      CardContent: "O-genki dayo minna-san Ore no namae wa Miggui desu. ",
+      CardContent: (
+        <p>
+          <span style={{ fontWeight: 700 }}>Dr Seuss once said.</span>{" "}
+          <span style={{ fontWeight: 700 }}>
+            "Sometimes the questions are complicated and the answers are
+            simple."
+          </span>
+          <br />
+          for me it means, when you are having a rough time, take a break and
+          look at things on a bigger point of view. then and there you might see
+          how you'll breakthrough.
+        </p>
+      ),
+      CardTitle: "",
     },
     {
       LastName: "Antalan",
