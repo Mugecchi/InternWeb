@@ -139,7 +139,6 @@ export default function Testimonial({ Team = [] }) {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Button>X</Button>
                 <Grid item>
                   {isMobile ? null : (
                     <i class="fa-solid fa-quote-right fa-10x fa-fade" />
