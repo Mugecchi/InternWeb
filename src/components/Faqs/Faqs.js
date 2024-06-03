@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-import { Container, Grid, Typography, TextField, Button } from "@material-ui/core";
+import {
+  Container,
+  Grid,
+  Typography,
+  TextField,
+  Button,
+} from "@material-ui/core";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { makeStyles } from "@material-ui/core/styles"; // Import makeStyles
 import "leaflet/dist/leaflet.css"; // Import Leaflet CSS
-import markerIcon from './marker.png';
-import L from 'leaflet';
+import markerIcon from "../marker.png";
+import L from "leaflet";
 
 const useStyles = makeStyles((theme) => ({
   faqContainer: {
@@ -20,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
 }));
-
 
 const Faq = ({ question, answer, isOpen, onClick }) => {
   const classes = useStyles();
@@ -114,10 +119,9 @@ const Faqs = () => {
   const customIcon = L.icon({
     iconUrl: markerIcon,
     iconSize: [50, 52],
-    iconAnchor: [22, 51], 
-    popupAnchor: [10, -51], 
+    iconAnchor: [22, 51],
+    popupAnchor: [10, -51],
   });
-  
 
   return (
     <Container maxWidth="md" style={{ marginTop: "1rem" }}>
@@ -128,13 +132,15 @@ const Faqs = () => {
               Frequently Asked Questions
             </Typography>
             <p style={{ textAlign: "justify" }}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you eager to kickstart your career? Look no further!
-              An internship opportunity with Radztech will empower you with practical skills, real-world experience, and
-              valuable connections.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you eager to
+              kickstart your career? Look no further! An internship opportunity
+              with Radztech will empower you with practical skills, real-world
+              experience, and valuable connections.
             </p>
             <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here are the frequently asked
-              questions about the Internship program offered by Radztech Business Solutions!
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here
+              are the frequently asked questions about the Internship program
+              offered by Radztech Business Solutions!
             </p>
             {faqs.map((faq, index) => (
               <Faq
@@ -223,10 +229,11 @@ const Faqs = () => {
               >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 <Marker position={[16.932315, 121.767919]} icon={customIcon}>
-                <Popup>
-                  Don Jose Canciller Ave., District 1, <br /> Cauayan City 3305, Isabela
-                </Popup>
-              </Marker>
+                  <Popup>
+                    Don Jose Canciller Ave., District 1, <br /> Cauayan City
+                    3305, Isabela
+                  </Popup>
+                </Marker>
               </MapContainer>
             </div>
           </div>
