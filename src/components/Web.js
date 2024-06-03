@@ -13,7 +13,7 @@ import bg2 from "../images/bg_2.png";
 import WAVE from "../images/WAVE.svg";
 import InternData from "./Teams/Testimonials/InternData";
 import Slider from "./InternTeam/Accordion";
-import YoutubePlayer from "./VideoStream/youtube";
+import Gallery from "./Gallery/Gallery";
 import Faqs from "./Faqs/Faqs";
 import HeroPage from "./LandingPage/HeroPage";
 
@@ -131,7 +131,7 @@ const Home = () => {
         <InternData />
       </div>
       <div className={classes.primaryPanel}>
-        <YoutubePlayer />
+        <Gallery />
       </div>
       <div className={classes.primaryPanel}>
         <Faqs />
