@@ -1,22 +1,11 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Grid,
-  TextField,
-  Typography,
-  makeStyles,
-  useMediaQuery,
-} from "@material-ui/core";
-import bg2 from "../images/bg_2.png";
-import WAVE from "../images/WAVE.svg";
+import { Box, Typography, makeStyles } from "@material-ui/core";
 import InternData from "./Teams/Testimonials/InternData";
 import Slider from "./InternTeam/Accordion";
-import Gallery from "./Gallery/Gallery";
 import Faqs from "./Faqs/Faqs";
 import HeroPage from "./LandingPage/HeroPage";
 import Message from "./Message/Messagees";
+import Gallery from "./Gallery/Gallery";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -132,14 +121,10 @@ const Home = () => {
         <InternData />
       </div>
       <div className={classes.primaryPanel}>
-<<<<<<< HEAD
         <Message />
       </div>
       <div className={classes.primaryPanel}>
-        <YoutubePlayer />
-=======
         <Gallery />
->>>>>>> 0b727ec1ea70edc0f15e1680ac818917618cd921
       </div>
       <div className={classes.primaryPanel}>
         <Faqs />
