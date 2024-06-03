@@ -1,6 +1,6 @@
 import React from "react";
 import "./Messagee.css";
-import Ado from "./Teams/InternImages/Dev Ado.png";
+import Ado from "../Teams/InternImages/Dev Ado.png";
 
 const Message = () => {
   const notes = [
@@ -24,8 +24,13 @@ const Message = () => {
             }}
           />
           <p>
-            <span style={{ fontWeight: 800 }}>Adonis A. Maranan</span> <br />{" "}
-            <span style={{ fontWeight: 800 }}>Junior Software Developer</span>
+            <span style={{ fontSize: 20, fontWeight: 800 }}>
+              Adonis A. Maranan
+            </span>{" "}
+            <br />{" "}
+            <span style={{ fontSize: 20, fontWeight: 800 }}>
+              Developer Team
+            </span>
             <br /> <br />
             &nbsp;&nbsp;&nbsp;&nbsp;"On behalf of the entire Marketing team, I
             want to extend our warmest congratulations to you on completing your

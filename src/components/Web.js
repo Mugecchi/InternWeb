@@ -16,6 +16,7 @@ import Slider from "./InternTeam/Accordion";
 import YoutubePlayer from "./VideoStream/youtube";
 import Faqs from "./Faqs/Faqs";
 import HeroPage from "./LandingPage/HeroPage";
+import Message from "./Message/Messagees";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -129,6 +130,9 @@ const Home = () => {
 
       <div className={classes.secondaryPanel}>
         <InternData />
+      </div>
+      <div className={classes.primaryPanel}>
+        <Message />
       </div>
       <div className={classes.primaryPanel}>
         <YoutubePlayer />
