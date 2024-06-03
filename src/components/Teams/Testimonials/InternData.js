@@ -573,7 +573,7 @@ export default function InternData() {
       src: Pat,
       CardTitle: "",
       CardContent:
-        "This internship was seemingly a stumbling block because of the sore setbacks and magnified self-insufficiency. Yet each time I stood up, started over, and looked back, I realized that this block was actually a stepping stone to advanced my accounting expertise, matured me in handling relationships, and deepened my personal understanding",
+        "This internship was actually a stepping stone to advanced my accounting expertise, matured me in handling relationships, and deepened my personal understanding",
     },
     {
       LastName: "Medina",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Purpose.css";
+import "./Purposee.css";
 
 const Purpose = () => {
   const [note, setNote] = useState(
