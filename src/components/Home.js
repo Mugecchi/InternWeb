@@ -8,7 +8,7 @@ import {
   makeStyles,
   useMediaQuery,
 } from "@material-ui/core";
-import bg from "../images/bg 2.png";
+import bg3 from "../images/Bg3.png";
 import overlay from "../images/overlay.png";
 import WAVE from "../images/WAVE.svg";
 import InternData from "./Teams/Testimonials/InternData";
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     width: "120vw",
     height: "100vh",
     zIndex: -1,
-    opacity: 1,
+    opacity: 0,
   },
   textContainer: {
     paddingTop: "20vh",
@@ -76,25 +76,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#011c25",
     padding: "10vh 0vh",
   },
-  // searchBar: {
-  //   background: "white",
-  //   maxWidth: "30vw",
-  //   maxHeight: "7vh",
-  //   fontSize: "0.5vw",
-  //   width: "60vw",
-  //   height: "10vh",
-  //   borderRadius: theme.spacing(2, 0, 0, 2),
-  //   "& .MuiOutlinedInput-root": {
-  //     borderRadius: theme.spacing(2, 0, 0, 2),
-  //     fontSize: "0.5vw",
-  //     height: "100%",
-  //     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-  //       borderWidth: "2px",
-  //       fontSize: "0.5vw",
-  //       borderRadius: theme.spacing(2, 0, 0, 2), // Change border radius when focused
-  //     },
-  //   },
-  // },
+
   inputLabel: {
     color: "#bcbcbc",
     fontSize: "0.5vw",
@@ -118,7 +100,7 @@ const Home = () => {
         fontWeight: fontWeight,
         lineHeight: 1,
         color: "transparent",
-        WebkitTextStroke: color || `1px white`, // Outline color and width
+        WebkitTextStroke: `3px #000000`, // Outline color and width
       }}
     >
       {children}
@@ -129,7 +111,8 @@ const Home = () => {
   return (
     <div className={classes.root}>
       <div className={classes.LandingPane}>
-        <img alt="Background" src={bg} className={classes.bgImage} />
+        <img alt="Background" src={bg3} className={classes.bgImage} />
+
         <div className={classes.textContainer}>
           <Box fontFamily="">
             <Typography align="center">
@@ -138,12 +121,29 @@ const Home = () => {
                 <br /> YOUR INTERNSHIP, YOUR FUTURE
               </OutlineText>
               <br />
-              <OutlineText fontSize="3vw" fontWeight={300}>
-                <span> Learning.</span> <span>Growing.</span>{" "}
-                <span>Making an impact:</span>
-                <br /> Explore the journeys of those who dared to bridge
-                <br /> the gap between theory and reality.
-              </OutlineText>
+              <Typography
+                style={{ fontSize: "3vw", fontWeight: 600, color: "black" }}
+              >
+                <span style={{ color: "black", fontWeight: 600 }}>
+                  {" "}
+                  Learning.
+                </span>{" "}
+                <span
+                  style={{
+                    fontWeight: 600,
+                    WebkitTextStroke: `3px #000000`,
+                    color: "white",
+                  }}
+                >
+                  Growing.
+                </span>{" "}
+                <span style={{ color: "#ff7704", fontWeight: 600 }}>
+                  Making an impact:
+                </span>
+                <br /> Explore the journeys of those who dared <br />
+                to bridge the gap between <br />
+                theory and reality.
+              </Typography>
             </Typography>
           </Box>
           <img
