@@ -6,6 +6,7 @@ import Faqs from "./Faqs/Faqs";
 import HeroPage from "./LandingPage/HeroPage";
 import Message from "./Message/Messagees";
 import Gallery from "./Gallery/Gallery";
+import Purpose from "./Purpose/Purpose";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -120,6 +121,9 @@ const Home = () => {
 
       <div className={classes.secondaryPanel}>
         <InternData />
+      </div>
+      <div className={classes.primaryPanel}>
+        <Purpose />
       </div>
       <div className={classes.primaryPanel}>
         <Message />
