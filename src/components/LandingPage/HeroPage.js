@@ -1,76 +1,73 @@
-import React from "react";
-import { Container, Typography, Button, Avatar } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import heroImage from "../../images/Bg3.png";
+import React from 'react';
+import { makeStyles } from '@mui/styles';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    color: "#fff",
+    textAlign: 'center',
+    padding: theme.spacing(4),
   },
-  title: {
-    fontSize: "2.5rem",
-    fontWeight: 600,
-    textAlign: "center",
-    marginTop: "20vh",
-    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+  logo: {
+    width: 50,
+    height: 50,
   },
-  text: {
-    fontSize: "1.5rem",
-    textAlign: "center",
-    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+  heading: {
+    fontFamily: 'Georgia, serif',
+    fontWeight: 'bold',
+    fontSize: '1.5rem',
+    marginBottom: theme.spacing(2),
   },
-  avatar: {
-    width: "10vh",
-    height: "10vh",
-    margin: "20px auto",
+  highlight: {
+    color: '#FF6600',
   },
-  button: {
-    marginTop: "20px",
-    backgroundColor: "#ff7704",
-    color: "#fff",
-    "&:hover": {
-      backgroundColor: "#ff9933",
+  underline: {
+    textDecoration: 'underline',
+  },
+  subheading: {
+    fontSize: '1rem',
+    marginBottom: theme.spacing(2),
+  },
+  circled: {
+    position: 'relative',
+    '&::after': {
+      content: '""',
+      position: 'absolute',
+      top: '-10%',
+      right: '-10%',
+      width: '120%',
+      height: '120%',
+      border: '2px solid black',
+      borderRadius: '50%',
     },
   },
-  image: {
-    display: "block",
-    marginTop: "20px",
-    borderRadius: "20px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+  description: {
+    marginTop: theme.spacing(2),
+    fontSize: '1rem',
+    lineHeight: 1.5,
   },
+  bold: {
+    fontWeight: 'bold',
+  }
 }));
 
-const HeroPage = () => {
+const CareerOdyssey = () => {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="xl" className={classes.root}>
-      <Typography align="center" component="div">
-        <Avatar alt="RZT Logo" src={heroImage} className={classes.avatar} />
-        <Typography className={classes.title}>
-          NAVIGATE YOUR <span style={{ color: "#ff7704" }}>CAREER ODYSSEY</span>
-        </Typography>
-        <Typography className={classes.text}>
-          FROM INTERNSHIP{" "}
-          <span style={{ color: "#ff7704" }}>TO FUTURE SUCCESS</span>
-        </Typography>
-        <Typography className={classes.text}>
-          Learning <span style={{ color: "#ff7704" }}>Growing.</span>{" "}
-          <span style={{ color: "#ff7704" }}>Making an impact:</span> Explore
-          the journeys of those who dared to bridge the gap between theory and
-          reality.
-        </Typography>
-        <Button
-          variant="contained"
-          className={classes.button}
-          href="/internship"
-          target="_blank"
-        >
-          Apply Now
-        </Button>
+    <Box className={classes.root}>
+      <img src="logo.png" alt="logo" className={classes.logo} />
+      <Typography variant="h4" className={classes.heading}>
+        NAVIGATE YOUR <span className={classes.highlight}>CAREER ODYSSEY</span>:
       </Typography>
-    </Container>
+      <Typography variant="h4" className={classes.heading}>
+        FROM INTERNSHIP <span className={`${classes.highlight} ${classes.circled}`}>TO FUTURE SUCCESS</span>
+      </Typography>
+      <Typography variant="body1" className={classes.description}>
+        Learning, <span className={classes.bold}>Growing</span>, Making an impact: Explore the journeys of those who dared to bridge the gap between theory and reality.
+      </Typography>
+    </Box>
   );
 };
 
-export default HeroPage;
+export default CareerOdyssey;
