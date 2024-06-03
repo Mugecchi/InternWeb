@@ -26,7 +26,6 @@ const StyledButtonBase = styled(ButtonBase)(({ theme }) => ({
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
-    padding: theme.spacing(2),
   },
   PaperCont: {
     padding: "2vw",
@@ -45,11 +44,8 @@ const useStyles = makeStyles((theme) => ({
       height: "35vh",
     },
   },
-  carouselItem: {
-    margin: "5vw",
-  },
   carouselMobItem: {
-    margin: "10vw",
+    margin: "3vw",
   },
   blurWrapper: {
     position: "relative",
@@ -126,9 +122,7 @@ const ModalExp = ({ children = {}, Team = [] }) => {
           {Team.map((item, index) => (
             <div
               key={index}
-              className={
-                isMobile ? classes.carouselMobItem : classes.carouselItem
-              }
+              className={isMobile ? classes.carouselMobItem : null}
             >
               <Typography align="center">
                 <Paper

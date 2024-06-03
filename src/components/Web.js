@@ -69,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
   },
   secondaryPanel: {
     position: "relative",
+    height: "40vh",
     background: "#011c25",
     padding: "10vh 0vh",
   },
