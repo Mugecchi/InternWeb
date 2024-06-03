@@ -6,6 +6,7 @@ import InternData from "./components/Teams/Testimonials/InternData";
 import Accordion from "./components/InternTeam/Accordion";
 import YoutubePlayer from "./components/VideoStream/youtube";
 import Purpose from "./components/Purpose";
+import Message from "./components/Messagees";
 
 const routes = [
   {
@@ -40,6 +41,10 @@ const routes = [
       {
         path: "Purpose",
         element: Purpose,
+      },
+      {
+        path: "Message",
+        element: Message,
       },
     ],
   },
