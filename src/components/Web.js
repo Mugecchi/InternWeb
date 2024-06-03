@@ -16,7 +16,6 @@ import Slider from "./InternTeam/Accordion";
 import Gallery from "./Gallery/Gallery";
 import Faqs from "./Faqs/Faqs";
 import HeroPage from "./LandingPage/HeroPage";
-import Message from "./Message/Messagees";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -132,14 +131,7 @@ const Home = () => {
         <InternData />
       </div>
       <div className={classes.primaryPanel}>
-<<<<<<< HEAD
-        <Message />
-      </div>
-      <div className={classes.primaryPanel}>
-        <YoutubePlayer />
-=======
         <Gallery />
->>>>>>> 0b727ec1ea70edc0f15e1680ac818917618cd921
       </div>
       <div className={classes.primaryPanel}>
         <Faqs />
