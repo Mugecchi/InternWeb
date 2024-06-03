@@ -5,6 +5,7 @@ import ContactUs from "./components/ContactUs";
 import InternData from "./components/Teams/Testimonials/InternData";
 import Accordion from "./components/InternTeam/Accordion";
 import YoutubePlayer from "./components/VideoStream/youtube";
+import Purpose from "./components/Purpose";
 
 const routes = [
   {
@@ -34,8 +35,12 @@ const routes = [
       },
       {
         path: "youtube",
-        element: YoutubePlayer
-      }
+        element: YoutubePlayer,
+      },
+      {
+        path: "Purpose",
+        element: Purpose,
+      },
     ],
   },
 ];
