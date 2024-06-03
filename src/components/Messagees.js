@@ -1,7 +1,7 @@
 import React from "react";
 import "./Messagee.css";
 
-const Messagees = () => {
+const Message = () => {
   const notes = [
     { id: 1, color: "lightyellow" },
     { id: 2, color: "lightpink" },
@@ -26,4 +26,4 @@ const Messagees = () => {
   );
 };
 
-export default Messagees;
+export default Message;
