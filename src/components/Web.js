@@ -15,28 +15,25 @@ import InternData from "./Teams/Testimonials/InternData";
 import Slider from "./InternTeam/Accordion";
 import YoutubePlayer from "./VideoStream/youtube";
 import Faqs from "./Faqs/Faqs";
+import HeroPage from "./LandingPage/HeroPage";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
+    overflow: "hidden",
   },
   LandingPane: {
+    display: "flex",
     textAlign: "center",
-    background: "#000000",
-    color: "#ffffff",
-    position: "relative", // Changed from "absolute" to "relative"
-    height: "140vh", // Set the height to occupy the full viewport height
-    width: "100%",
+    position: "relative",
+    height: "100vh",
+    width: "100vw",
     overflow: "hidden",
-    "@media (max-width: 600px)": {
-      height: "35vh",
-    },
   },
   bgImage: {
     position: "absolute",
     top: 0,
     left: "-13vw",
-    width: "130%",
     height: "100%",
     zIndex: -1,
     "@media (max-width: 600px)": {
@@ -118,6 +115,9 @@ const Home = () => {
 
   return (
     <div className={classes.root}>
+      <div className={classes.LandingPane}>
+        <HeroPage />
+      </div>
       <div className={classes.primaryPanel}>
         <Typography align="center">
           <Box fontFamily={"poppins"} fontSize={"5vw"} fontWeight={800}>
