@@ -88,7 +88,7 @@ const albums = [
   {
     title: "Name of album",
     images: album1Images,
-    link: "/album1",
+    link: "/BarDaGoalan",
   },
   {
     title: "Name of Album2",
