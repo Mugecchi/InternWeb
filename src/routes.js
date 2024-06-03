@@ -1,7 +1,5 @@
-import Home from "./components/Home";
-import CompanyProfile from "./components/CompanyProfile";
-import Faqs from "./components/Faqs";
-import ContactUs from "./components/ContactUs";
+import Home from "./components/Web";
+import Faqs from "./components/Faqs/Faqs";
 import InternData from "./components/Teams/Testimonials/InternData";
 import Accordion from "./components/InternTeam/Accordion";
 import YoutubePlayer from "./components/VideoStream/youtube";
@@ -25,10 +23,6 @@ const routes = [
       {
         path: "InternData",
         element: InternData,
-      },
-      {
-        path: "contact-us",
-        element: ContactUs,
       },
       {
         path: "accordion",

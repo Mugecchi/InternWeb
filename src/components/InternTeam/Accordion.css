@@ -10,9 +10,13 @@ body {
   align-items: flex-start;
   flex-wrap: nowrap;
   width: 90vw;
-  height: 80vh;
+  height: 60vh;
   margin: 0 auto;
   padding: 0;
+  @media screen and (max-width: 600px) {
+    height: 30vh;
+    width: 90vw;
+  }
 }
 
 .slider li {
@@ -22,7 +26,7 @@ body {
   overflow: hidden;
   flex-grow: 1;
   transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 75px 0 75px 0;
+  border-radius: 5vw 0 5vw 0;
 }
 
 .slider li::before {
@@ -65,7 +69,7 @@ body {
 
 .slider h1 {
   position: absolute;
-  top: 75vh;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(90deg);
   transition: transform 0.5s cubic-bezier(0.35, 0, 0, 1);
@@ -74,11 +78,16 @@ body {
   font-size: 2vw;
   background: rgba(11, 11, 11, 0.306); /* Transparent background */
   line-height: 1.5;
-  height: 25vh;
+  height: 15vh;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: center;
   filter: grayscale(100%);
   transform-origin: left top;
+  @media screen and (max-width: 600px) {
+    top: 30vh;
+
+    width: 25vw;
+  }
 }
 
 .slider li:hover h1 {
