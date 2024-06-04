@@ -120,14 +120,9 @@ const Faqs = () => {
     rotationAngle: 45,
     iconUrl: markerIcon,
     iconSize: [50, 52],
-<<<<<<< HEAD
     iconAnchor: [22, 51], 
     popupAnchor: [10, -51], 
     className: 'rotating-marker',
-=======
-    iconAnchor: [22, 51],
-    popupAnchor: [10, -51],
->>>>>>> dad002ad4e27c781b1e5c78007e3b7960b269106
   });
 
   return (
@@ -237,12 +232,7 @@ const Faqs = () => {
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 <Marker position={[16.932315, 121.767919]} icon={customIcon}>
                   <Popup>
-<<<<<<< HEAD
                     Don Jose Canciller Ave., District 1, <br /> Cauayan City 3305, Isabela
-=======
-                    Don Jose Canciller Ave., District 1, <br /> Cauayan City
-                    3305, Isabela
->>>>>>> dad002ad4e27c781b1e5c78007e3b7960b269106
                   </Popup>
                 </Marker>
               </MapContainer>
