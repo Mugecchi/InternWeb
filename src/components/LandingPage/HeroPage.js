@@ -30,19 +30,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     marginBottom: theme.spacing(2),
   },
-  // circled: {
-  //   position: "relative",
-  //   "&::after": {
-  //     content: '""',
-  //     position: "absolute",
-  //     top: "-10%",
-  //     right: "-10%",
-  //     width: "120%",
-  //     height: "120%",
-  //     border: "2px solid black",
-  //     borderRadius: "50%",
-  //   },
-  // },
+
   description: {
     marginTop: theme.spacing(2),
     fontSize: "2.5vw",
