@@ -1,8 +1,5 @@
 import React from "react";
-import { makeStyles } from "@mui/styles";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-
+import { Box,makeStyles,Typography } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: "center",

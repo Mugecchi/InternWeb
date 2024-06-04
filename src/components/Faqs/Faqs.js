@@ -9,7 +9,7 @@ import {
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { makeStyles } from "@material-ui/core/styles"; // Import makeStyles
 import "leaflet/dist/leaflet.css"; // Import Leaflet CSS
-import markerIcon from "../marker.png";
+import markerIcon from "./marker.png";
 import L from "leaflet";
 
 const useStyles = makeStyles((theme) => ({
