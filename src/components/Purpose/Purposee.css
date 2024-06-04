@@ -1,69 +1,17 @@
-/* PurposeComponent.css */
-
-.notepad {
-  margin-top: 30px;
-  width: 100%;
-  max-width: 600px;
-  background-color: #ffffff;
+.message-container {
+  position: relative;
+  padding: 40px;
+  border: 5px solid #000;
   border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin: 100px auto;
-  transition: all 0.3s ease-in-out;
-}
-
-.notepad:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-4px);
-}
-
-.notepad-header {
-  width: 100%;
-  align-content: center;
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-  height: 50px;
+  margin-bottom: 100px;
   background-color: #ff7704;
-  border-bottom: 5px solid #d8d8d8;
-  border-radius: 20px 20px 0 0;
+  margin-left: 17px;
 }
 
-.notepad-body {
-  padding: 20px;
-}
-
-.notepad-textarea {
-  width: 100%;
-  height: 450px;
-  border: none;
-  outline: none;
-  resize: none;
-  background: transparent;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: justify;
-  font-family: "Times New Roman", Times, serif;
-}
-
-@media (max-width: 600px) {
-  .notepad {
-    width: calc(100% - 40px);
-    max-width: none;
-  }
-
-  .notepad-header {
-    height: 40px;
-  }
-
-  .notepad-body {
-    padding: 10px;
-  }
-
-  .notepad-textarea {
-    height: 200px;
-  }
+.message-card {
+  margin-bottom: 2rem;
+  position: relative;
+  border-radius: 20px;
+  z-index: 1;
+  border-style: inherit;
 }

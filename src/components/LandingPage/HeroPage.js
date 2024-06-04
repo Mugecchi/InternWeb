@@ -1,11 +1,9 @@
-import React from 'react';
-import { makeStyles } from '@mui/styles';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import React from "react";
+import { Typography, Box, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    textAlign: 'center',
+    textAlign: "center",
     padding: theme.spacing(4),
   },
   logo: {
@@ -13,42 +11,42 @@ const useStyles = makeStyles((theme) => ({
     height: 50,
   },
   heading: {
-    fontFamily: 'Georgia, serif',
-    fontWeight: 'bold',
-    fontSize: '1.5rem',
+    fontFamily: "Georgia, serif",
+    fontWeight: "bold",
+    fontSize: "1.5rem",
     marginBottom: theme.spacing(2),
   },
   highlight: {
-    color: '#FF6600',
+    color: "#FF6600",
   },
   underline: {
-    textDecoration: 'underline',
+    textDecoration: "underline",
   },
   subheading: {
-    fontSize: '1rem',
+    fontSize: "1rem",
     marginBottom: theme.spacing(2),
   },
   circled: {
-    position: 'relative',
-    '&::after': {
+    position: "relative",
+    "&::after": {
       content: '""',
-      position: 'absolute',
-      top: '-10%',
-      right: '-10%',
-      width: '120%',
-      height: '120%',
-      border: '2px solid black',
-      borderRadius: '50%',
+      position: "absolute",
+      top: "-10%",
+      right: "-10%",
+      width: "120%",
+      height: "120%",
+      border: "2px solid black",
+      borderRadius: "50%",
     },
   },
   description: {
     marginTop: theme.spacing(2),
-    fontSize: '1rem',
+    fontSize: "1rem",
     lineHeight: 1.5,
   },
   bold: {
-    fontWeight: 'bold',
-  }
+    fontWeight: "bold",
+  },
 }));
 
 const CareerOdyssey = () => {
@@ -61,10 +59,15 @@ const CareerOdyssey = () => {
         NAVIGATE YOUR <span className={classes.highlight}>CAREER ODYSSEY</span>:
       </Typography>
       <Typography variant="h4" className={classes.heading}>
-        FROM INTERNSHIP <span className={`${classes.highlight} ${classes.circled}`}>TO FUTURE SUCCESS</span>
+        FROM INTERNSHIP{" "}
+        <span className={`${classes.highlight} ${classes.circled}`}>
+          TO FUTURE SUCCESS
+        </span>
       </Typography>
       <Typography variant="body1" className={classes.description}>
-        Learning, <span className={classes.bold}>Growing</span>, Making an impact: Explore the journeys of those who dared to bridge the gap between theory and reality.
+        Learning, <span className={classes.bold}>Growing</span>, Making an
+        impact: Explore the journeys of those who dared to bridge the gap
+        between theory and reality.
       </Typography>
     </Box>
   );
