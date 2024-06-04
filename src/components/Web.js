@@ -1,15 +1,20 @@
 import React from "react";
+<<<<<<< HEAD
 import {
   Box,
   Typography,
   makeStyles,
 } from "@material-ui/core";
+=======
+import { Box, Typography, makeStyles } from "@material-ui/core";
+>>>>>>> dad002ad4e27c781b1e5c78007e3b7960b269106
 import InternData from "./Teams/Testimonials/InternData";
 import Slider from "./InternTeam/Accordion";
-import Gallery from "./Gallery/Gallery";
 import Faqs from "./Faqs/Faqs";
 import HeroPage from "./LandingPage/HeroPage";
 import Message from "./Message/Messagees";
+import Gallery from "./Gallery/Gallery";
+import Purpose from "./Purpose/Purpose";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     width: "100vw",
     overflow: "hidden",
+    [theme.breakpoints.down("sm")]: {
+      height: "50vh",
+    },
   },
   bgImage: {
     position: "absolute",
@@ -73,6 +81,7 @@ const useStyles = makeStyles((theme) => ({
   },
   secondaryPanel: {
     position: "relative",
+    height: "40vh",
     background: "#011c25",
     padding: "10vh 0vh",
   },
@@ -125,10 +134,20 @@ const Home = () => {
         <InternData />
       </div>
       <div className={classes.primaryPanel}>
+<<<<<<< HEAD
         <Message />
       </div>
       <div className={classes.primaryPanel}>
         <Gallery/>
+=======
+        <Purpose />
+      </div>
+      <div className={classes.primaryPanel}>
+        <Message />
+      </div>
+      <div className={classes.primaryPanel}>
+        <Gallery />
+>>>>>>> dad002ad4e27c781b1e5c78007e3b7960b269106
       </div>
       <div className={classes.primaryPanel}>
         <Faqs />

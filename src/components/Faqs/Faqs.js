@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-import { Container, Grid, Typography, TextField, Button } from "@material-ui/core";
+import {
+  Container,
+  Grid,
+  Typography,
+  TextField,
+  Button,
+} from "@material-ui/core";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { makeStyles } from "@material-ui/core/styles"; // Import makeStyles
 import "leaflet/dist/leaflet.css"; // Import Leaflet CSS
-import markerIcon from './marker.png';
-import L from 'leaflet';
+import markerIcon from "../marker.png";
+import L from "leaflet";
 
 const useStyles = makeStyles((theme) => ({
   faqContainer: {
@@ -114,28 +120,34 @@ const Faqs = () => {
     rotationAngle: 45,
     iconUrl: markerIcon,
     iconSize: [50, 52],
+<<<<<<< HEAD
     iconAnchor: [22, 51], 
     popupAnchor: [10, -51], 
     className: 'rotating-marker',
+=======
+    iconAnchor: [22, 51],
+    popupAnchor: [10, -51],
+>>>>>>> dad002ad4e27c781b1e5c78007e3b7960b269106
   });
-  
 
   return (
     <Container maxWidth="md" style={{ marginTop: "-6rem" }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6} style={{ paddingRight: 30 }}>
+        <Grid item xs={12} md={6} style={{ paddingRight: "1vw" }}>
           <div className={classes.faqContainer}>
             <Typography variant="h3" align="center" gutterBottom>
               Frequently Asked Questions
             </Typography>
             <p style={{ textAlign: "justify" }}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you eager to kickstart your career? Look no further!
-              An internship opportunity with Radztech will empower you with practical skills, real-world experience, and
-              valuable connections.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you eager to
+              kickstart your career? Look no further! An internship opportunity
+              with Radztech will empower you with practical skills, real-world
+              experience, and valuable connections.
             </p>
             <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here are the frequently asked
-              questions about the Internship program offered by Radztech Business Solutions!
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here
+              are the frequently asked questions about the Internship program
+              offered by Radztech Business Solutions!
             </p>
             {faqs.map((faq, index) => (
               <Faq
@@ -148,7 +160,7 @@ const Faqs = () => {
             ))}
           </div>
         </Grid>
-        <Grid item xs={12} md={6} style={{ paddingLeft: 30 }}>
+        <Grid item xs={12} md={6} style={{ paddingLeft: "1vw" }}>
           <div>
             <Typography variant="h3" align="center" gutterBottom>
               Contact Us
@@ -225,7 +237,12 @@ const Faqs = () => {
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 <Marker position={[16.932315, 121.767919]} icon={customIcon}>
                   <Popup>
+<<<<<<< HEAD
                     Don Jose Canciller Ave., District 1, <br /> Cauayan City 3305, Isabela
+=======
+                    Don Jose Canciller Ave., District 1, <br /> Cauayan City
+                    3305, Isabela
+>>>>>>> dad002ad4e27c781b1e5c78007e3b7960b269106
                   </Popup>
                 </Marker>
               </MapContainer>
