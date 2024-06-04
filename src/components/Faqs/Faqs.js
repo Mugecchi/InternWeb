@@ -9,7 +9,7 @@ import {
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { makeStyles } from "@material-ui/core/styles"; // Import makeStyles
 import "leaflet/dist/leaflet.css"; // Import Leaflet CSS
-import markerIcon from "../marker.png";
+import markerIcon from "./marker.png";
 import L from "leaflet";
 
 const useStyles = makeStyles((theme) => ({
@@ -117,14 +117,16 @@ const Faqs = () => {
   };
 
   const customIcon = L.icon({
+    rotationAngle: 45,
     iconUrl: markerIcon,
     iconSize: [50, 52],
-    iconAnchor: [22, 51],
-    popupAnchor: [10, -51],
+    iconAnchor: [22, 51], 
+    popupAnchor: [10, -51], 
+    className: 'rotating-marker',
   });
 
   return (
-    <Container maxWidth="md" style={{ marginTop: "1rem" }}>
+    <Container maxWidth="md" style={{ marginTop: "-6rem" }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} style={{ paddingRight: "1vw" }}>
           <div className={classes.faqContainer}>
@@ -230,17 +232,17 @@ const Faqs = () => {
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 <Marker position={[16.932315, 121.767919]} icon={customIcon}>
                   <Popup>
-                    Don Jose Canciller Ave., District 1, <br /> Cauayan City
-                    3305, Isabela
+                    Don Jose Canciller Ave., District 1, <br /> Cauayan City 3305, Isabela
                   </Popup>
                 </Marker>
               </MapContainer>
             </div>
           </div>
         </Grid>
-      </Grid>
+      </Grid>               
     </Container>
   );
 };
 
 export default Faqs;
+
