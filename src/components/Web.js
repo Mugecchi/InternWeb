@@ -1,16 +1,9 @@
 import React from "react";
 import {
   Box,
-  Button,
-  Container,
-  Grid,
-  TextField,
   Typography,
   makeStyles,
-  useMediaQuery,
 } from "@material-ui/core";
-import bg2 from "../images/bg_2.png";
-import WAVE from "../images/WAVE.svg";
 import InternData from "./Teams/Testimonials/InternData";
 import Slider from "./InternTeam/Accordion";
 import Gallery from "./Gallery/Gallery";
@@ -132,14 +125,10 @@ const Home = () => {
         <InternData />
       </div>
       <div className={classes.primaryPanel}>
-<<<<<<< HEAD
         <Message />
       </div>
       <div className={classes.primaryPanel}>
-        <YoutubePlayer />
-=======
-        <Gallery />
->>>>>>> 0b727ec1ea70edc0f15e1680ac818917618cd921
+        <Gallery/>
       </div>
       <div className={classes.primaryPanel}>
         <Faqs />
