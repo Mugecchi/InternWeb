@@ -1,54 +1,60 @@
-import React from 'react';
-import { makeStyles } from '@mui/styles';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-
+import { Box, Grid, Typography, makeStyles } from "@material-ui/core";
+import React from "react";
+import logo from "../../images/emblem.svg";
 const useStyles = makeStyles((theme) => ({
   root: {
-    textAlign: 'center',
+    textAlign: "center",
+    width: "100vw",
+    height: "100vh",
+    background: "#f1f1f1",
     padding: theme.spacing(4),
   },
   logo: {
-    width: 50,
-    height: 50,
+    width: "20vw",
+    height: "20vw",
   },
   heading: {
-    fontFamily: 'Georgia, serif',
-    fontWeight: 'bold',
-    fontSize: '1.5rem',
+    fontFamily: "Radley",
+    fontWeight: "bold",
+    fontStyle: "italic",
+    fontSize: "3vw",
     marginBottom: theme.spacing(2),
   },
   highlight: {
-    color: '#FF6600',
+    color: "#FF6600",
   },
   underline: {
-    textDecoration: 'underline',
+    textDecoration: "underline",
   },
   subheading: {
-    fontSize: '1rem',
+    fontSize: "1rem",
     marginBottom: theme.spacing(2),
   },
-  circled: {
-    position: 'relative',
-    '&::after': {
-      content: '""',
-      position: 'absolute',
-      top: '-10%',
-      right: '-10%',
-      width: '120%',
-      height: '120%',
-      border: '2px solid black',
-      borderRadius: '50%',
-    },
-  },
+  // circled: {
+  //   position: "relative",
+  //   "&::after": {
+  //     content: '""',
+  //     position: "absolute",
+  //     top: "-10%",
+  //     right: "-10%",
+  //     width: "120%",
+  //     height: "120%",
+  //     border: "2px solid black",
+  //     borderRadius: "50%",
+  //   },
+  // },
   description: {
     marginTop: theme.spacing(2),
-    fontSize: '1rem',
+    fontSize: "2.5vw",
+    fontStyle: "italic",
+    fontFamily: "Radley",
     lineHeight: 1.5,
+    fontWeight: 500,
   },
-  bold: {
-    fontWeight: 'bold',
-  }
+  Growing: {
+    fontWeight: "bold",
+    fontSize: "5vw",
+  },
 }));
 
 const CareerOdyssey = () => {
@@ -56,15 +62,28 @@ const CareerOdyssey = () => {
 
   return (
     <Box className={classes.root}>
-      <img src="logo.png" alt="logo" className={classes.logo} />
+      <img src={logo} alt="logo" className={classes.logo} />
       <Typography variant="h4" className={classes.heading}>
-        NAVIGATE YOUR <span className={classes.highlight}>CAREER ODYSSEY</span>:
+        NAVIGATE YOUR{" "}
+        <span className={classes.highlight}>CAREER ODYSSEY: </span>
       </Typography>
       <Typography variant="h4" className={classes.heading}>
-        FROM INTERNSHIP <span className={`${classes.highlight} ${classes.circled}`}>TO FUTURE SUCCESS</span>
+        FROM INTERNSHIP{" "}
+        <span className={`${classes.highlight} ${classes.circled}`}>
+          TO FUTURE SUCCESS
+        </span>
       </Typography>
-      <Typography variant="body1" className={classes.description}>
-        Learning, <span className={classes.bold}>Growing</span>, Making an impact: Explore the journeys of those who dared to bridge the gap between theory and reality.
+      <Typography
+        variant="body1"
+        className={classes.description}
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <Grid item xs={8} style={{ textAlign: "center" }}>
+          Learning, <span className={classes.Growing}>Growing</span>,{" "}
+          <span style={{ color: "#ff7704" }}>Making an impact:</span> Explore
+          the journeys of those who dared to bridge the gap between theory and
+          reality.
+        </Grid>
       </Typography>
     </Box>
   );

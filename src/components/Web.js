@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     width: "100vw",
     overflow: "hidden",
+    [theme.breakpoints.down("sm")]: {
+      height: "50vh",
+    },
   },
   bgImage: {
     position: "absolute",
