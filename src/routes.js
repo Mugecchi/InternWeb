@@ -1,5 +1,6 @@
 import Home from "./components/Web";
 import Faqs from "./components/Faqs/Faqs";
+import BarDaGoalan from "./components/Gallery/BarDaGoalan";
 
 const routes = [
   {
@@ -13,6 +14,10 @@ const routes = [
       {
         path: "faqs",
         element: Faqs,
+      },
+      {
+        path: "bardagoalan",
+        element: BarDaGoalan,
       },
     ],
   },

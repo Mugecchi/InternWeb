@@ -1,5 +1,7 @@
 import React from "react";
-import { Typography, Box, makeStyles } from "@material-ui/core";
+import { makeStyles } from "@mui/styles";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -7,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(4),
   },
   logo: {
-    width: 50,
-    height: 50,
+    width: "20vw",
+    height: "20vw",
   },
   heading: {
     fontFamily: "Georgia, serif",
@@ -43,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
     fontSize: "1rem",
     lineHeight: 1.5,
+    fontWeight: 500,
   },
   bold: {
     fontWeight: "bold",
@@ -54,9 +57,10 @@ const CareerOdyssey = () => {
 
   return (
     <Box className={classes.root}>
-      <img src="logo.png" alt="logo" className={classes.logo} />
+      <img src={logo} alt="logo" className={classes.logo} />
       <Typography variant="h4" className={classes.heading}>
-        NAVIGATE YOUR <span className={classes.highlight}>CAREER ODYSSEY</span>:
+        NAVIGATE YOUR{" "}
+        <span className={classes.highlight}>CAREER ODYSSEY: </span>
       </Typography>
       <Typography variant="h4" className={classes.heading}>
         FROM INTERNSHIP{" "}

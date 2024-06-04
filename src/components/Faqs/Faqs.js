@@ -126,7 +126,7 @@ const Faqs = () => {
   return (
     <Container maxWidth="md" style={{ marginTop: "1rem" }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6} style={{ paddingRight: 30 }}>
+        <Grid item xs={12} md={6} style={{ paddingRight: "1vw" }}>
           <div className={classes.faqContainer}>
             <Typography variant="h3" align="center" gutterBottom>
               Frequently Asked Questions
@@ -153,7 +153,7 @@ const Faqs = () => {
             ))}
           </div>
         </Grid>
-        <Grid item xs={12} md={6} style={{ paddingLeft: 30 }}>
+        <Grid item xs={12} md={6} style={{ paddingLeft: "1vw" }}>
           <div>
             <Typography variant="h3" align="center" gutterBottom>
               Contact Us
